@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 279,
+    "build": 277,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -411,7 +411,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Player",
-          "persistentUuid": "399e3fe3-6d68-4d15-b0b0-4eeb5cdc2de3",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -427,8 +426,8 @@
               "JumpButton": "A"
             },
             {
-              "acceleration": 750,
-              "deceleration": 750,
+              "acceleration": 1500,
+              "deceleration": 1500,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "gravity": 525,
