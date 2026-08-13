@@ -426,10 +426,10 @@
               "JumpButton": "A"
             },
             {
+              "acceleration": 1500,
+              "deceleration": 1500,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "acceleration": 500,
-              "deceleration": 750,
               "gravity": 525,
               "jumpSpeed": 360,
               "jumpSustainTime": 0.3,
@@ -564,6 +564,7 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Coins",
+          "persistentUuid": "6151d41a-43aa-47af-82a1-3ff536894d59",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -815,11 +816,11 @@
             "objectName": "Background"
           },
           {
-            "objectName": "Coins"
-          },
-          {
             "folderName": "Mobile Controls",
             "children": [
+              {
+                "objectName": "Coins"
+              },
               {
                 "objectName": "MoveJoystick"
               },
