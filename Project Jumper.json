@@ -200,7 +200,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1.2121641972173838,
+        "zoomFactor": 1.1343715797161111,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -426,8 +426,8 @@
               "JumpButton": "A"
             },
             {
-              "acceleration": 1500,
-              "deceleration": 1500,
+              "acceleration": 750,
+              "deceleration": 750,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "gravity": 525,
