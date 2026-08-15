@@ -418,11 +418,7 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Player",
-<<<<<<< Updated upstream
-          "persistentUuid": "5294dd4d-72c6-4e44-8337-050cbddaea04",
-=======
           "persistentUuid": "6b8f9809-0025-4838-91b0-03d5b842d3ac",
->>>>>>> Stashed changes
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -450,28 +446,12 @@
               "JumpButton": "A"
             },
             {
-<<<<<<< Updated upstream
-              "isFolded": true,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "acceleration": 1000,
-              "deceleration": 4000,
-              "maxSpeed": 200,
-=======
-<<<<<<< HEAD
-              "acceleration": 750,
-              "deceleration": 750,
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-=======
               "isFolded": true,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1000,
               "deceleration": 4000,
               "maxSpeed": 250,
->>>>>>> b3280d20d95bf365b90aaf3e52d16e43fff2301a
->>>>>>> Stashed changes
               "gravity": 525,
               "jumpSpeed": 360,
               "jumpSustainTime": 0.3,
