@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 277,
+    "build": 279,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -411,6 +411,7 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Player",
+          "persistentUuid": "5294dd4d-72c6-4e44-8337-050cbddaea04",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -431,12 +432,11 @@
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1000,
               "deceleration": 4000,
-              "maxSpeed": 250,
+              "maxSpeed": 200,
               "gravity": 525,
               "jumpSpeed": 360,
               "jumpSustainTime": 0.3,
               "maxFallingSpeed": 400,
-              "maxSpeed": 200,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": false,
@@ -448,6 +448,7 @@
               "yGrabOffset": 0
             },
             {
+              "isFolded": true,
               "name": "SmoothCamera",
               "type": "SmoothCamera::SmoothCamera",
               "LeftwardSpeed": 0.99,
@@ -555,6 +556,7 @@
           "assetStoreId": "",
           "height": 64,
           "name": "Background",
+          "persistentUuid": "c143bfc4-ce06-468a-b935-fe1167822963",
           "texture": "assets\\PixelBackground.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 64,
@@ -566,6 +568,7 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Coins",
+          "persistentUuid": "b597ee8d-860a-4675-8b45-d7dd33e947fa",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -788,6 +791,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "Platform_Ground",
+          "persistentUuid": "5d0f3274-6ee2-4d95-85ae-09d1244c7e5c",
           "texture": "assets\\StartingPixelGround.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
