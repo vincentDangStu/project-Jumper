@@ -207,7 +207,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4335774304702437,
+        "zoomFactor": 0.4481978045410422,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -297,7 +297,7 @@
           "layer": "",
           "name": "Platform_Ground",
           "persistentUuid": "1c4f7ab9-04d4-4cee-8572-96199ce1245c",
-          "width": 2288,
+          "width": 2854,
           "x": -164,
           "y": 448,
           "zOrder": 5,
@@ -314,7 +314,7 @@
           "layer": "",
           "name": "Platform_Ground",
           "persistentUuid": "f51ca400-10c8-4228-a38c-06eed097aaaa",
-          "width": 904,
+          "width": 1468,
           "x": 1222,
           "y": 385,
           "zOrder": 6,
@@ -363,8 +363,8 @@
           "name": "House",
           "persistentUuid": "0b10f36e-587c-4e07-8a7f-34fbd09b5a94",
           "width": 0,
-          "x": 1912,
-          "y": 191,
+          "x": 2490,
+          "y": 193,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -899,6 +899,18 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "persistentUuid": "0311463c-39ec-4ebe-ab8f-b41e4b202722",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
         }
       ],
       "objectsFolderStructure": {
@@ -935,6 +947,9 @@
           },
           {
             "objectName": "House"
+          },
+          {
+            "objectName": "NewSprite"
           }
         ]
       },
