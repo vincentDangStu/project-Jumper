@@ -207,7 +207,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8416428125373225,
+        "zoomFactor": 0.4335774304702437,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -231,8 +231,8 @@
           "name": "Player",
           "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
           "width": 79,
-          "x": 384,
-          "y": 304,
+          "x": 168,
+          "y": 414,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -297,8 +297,8 @@
           "layer": "",
           "name": "Platform_Ground",
           "persistentUuid": "1c4f7ab9-04d4-4cee-8572-96199ce1245c",
-          "width": 1280,
-          "x": 0,
+          "width": 2288,
+          "x": -164,
           "y": 448,
           "zOrder": 5,
           "numberProperties": [],
@@ -314,8 +314,8 @@
           "layer": "",
           "name": "Platform_Ground",
           "persistentUuid": "f51ca400-10c8-4228-a38c-06eed097aaaa",
-          "width": 769,
-          "x": 511,
+          "width": 904,
+          "x": 1222,
           "y": 385,
           "zOrder": 6,
           "numberProperties": [],
@@ -331,9 +331,57 @@
           "name": "JumpTut",
           "persistentUuid": "3840e8ed-8db2-401d-8987-f7500711fd7c",
           "width": 0,
-          "x": 405,
-          "y": 334,
+          "x": 1109,
+          "y": 333,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "House",
+          "persistentUuid": "346d3a02-4e3d-41f6-a7ba-6c9d7aba31e0",
+          "width": 0,
+          "x": -52,
+          "y": 257,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "House",
+          "persistentUuid": "0b10f36e-587c-4e07-8a7f-34fbd09b5a94",
+          "width": 0,
+          "x": 1912,
+          "y": 191,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "MoveTut",
+          "persistentUuid": "7c1016e3-2a44-482a-9318-8c7acb256c4c",
+          "width": 0,
+          "x": 191,
+          "y": 357,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -795,6 +843,62 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "House",
+          "persistentUuid": "da79f937-ae46-4946-9655-2a6231c4e110",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "MoveTut",
+          "persistentUuid": "6344fb50-61a6-4a49-aecc-da9b5b39f176",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Arrow Keys to Move",
+          "font": "AtkinsonHyperlegible-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Arrow Keys to Move",
+            "font": "AtkinsonHyperlegible-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -825,6 +929,12 @@
           },
           {
             "objectName": "JumpTut"
+          },
+          {
+            "objectName": "MoveTut"
+          },
+          {
+            "objectName": "House"
           }
         ]
       },
