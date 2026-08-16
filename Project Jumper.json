@@ -170,11 +170,16 @@
         "userAdded": false
       },
       {
-        "file": "AtkinsonHyperlegible-Regular.ttf",
-        "kind": "font",
+        "file": "assets/Platform.png",
+        "kind": "image",
         "metadata": "",
-        "name": "AtkinsonHyperlegible-Regular.ttf",
-        "userAdded": false
+        "name": "Platform.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pirate Bomb Pack/Tile Sets/7ae5cb8ceac2358b2318dee281077e1a536487677fd321fe923540e952cdbd32_Platform.png",
+          "name": "Platform.png"
+        }
       }
     ]
   },
@@ -207,7 +212,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4481978045410422,
+        "zoomFactor": 0.6040838749988958,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -297,7 +302,7 @@
           "layer": "",
           "name": "Platform_Ground",
           "persistentUuid": "1c4f7ab9-04d4-4cee-8572-96199ce1245c",
-          "width": 2854,
+          "width": 3029,
           "x": -164,
           "y": 448,
           "zOrder": 5,
@@ -314,7 +319,7 @@
           "layer": "",
           "name": "Platform_Ground",
           "persistentUuid": "f51ca400-10c8-4228-a38c-06eed097aaaa",
-          "width": 1468,
+          "width": 1643,
           "x": 1222,
           "y": 385,
           "zOrder": 6,
@@ -363,8 +368,8 @@
           "name": "House",
           "persistentUuid": "0b10f36e-587c-4e07-8a7f-34fbd09b5a94",
           "width": 0,
-          "x": 2490,
-          "y": 193,
+          "x": 2649,
+          "y": 191,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -382,6 +387,186 @@
           "x": 191,
           "y": 357,
           "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "819c67d0-54c5-4a18-be93-91d29ecf4da6",
+          "width": 121,
+          "x": 1803,
+          "y": 208,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "DblJumpTut",
+          "persistentUuid": "08192f42-3106-4738-970c-5e76f7d41b39",
+          "width": 0,
+          "x": 1778,
+          "y": 293,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "f51b5256-5ec1-4ded-a767-e5c751d57af0",
+          "width": 103,
+          "x": 1871,
+          "y": 130,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "fe6b712c-7034-46de-a147-a80695df6c3f",
+          "width": 395,
+          "x": 1930,
+          "y": 60,
+          "zOrder": 14,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "2eea6370-700e-482c-8b86-068a219221c0",
+          "width": 138,
+          "x": 2190,
+          "y": 113,
+          "zOrder": 15,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PlatTut",
+          "persistentUuid": "bb1e419b-9f6e-42ab-9e61-fc28bddbae0e",
+          "width": 0,
+          "x": 2149,
+          "y": -54,
+          "zOrder": 16,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coins",
+          "persistentUuid": "3ffadb32-5a97-4726-9a20-5778be5e8ad7",
+          "width": 0,
+          "x": 1856,
+          "y": 184,
+          "zOrder": 17,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coins",
+          "persistentUuid": "6723245c-dbb3-4f98-85f5-85f6a5567aa2",
+          "width": 0,
+          "x": 1920,
+          "y": 105,
+          "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coins",
+          "persistentUuid": "93fa23d6-47bf-436e-b2f4-c47e0cd393c9",
+          "width": 0,
+          "x": 2058,
+          "y": 25,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coins",
+          "persistentUuid": "3bcb8413-8ad1-453e-a21b-d1d9a019b754",
+          "width": 0,
+          "x": 2208,
+          "y": 27,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Coins",
+          "persistentUuid": "4c24af25-22e3-4801-b7c7-88e195f750e7",
+          "width": 0,
+          "x": 2255,
+          "y": 93,
+          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -813,7 +998,7 @@
           "effects": [],
           "behaviors": [],
           "string": "Press Spacebar to Jump",
-          "font": "AtkinsonHyperlegible-Regular.ttf",
+          "font": "",
           "textAlignment": "left",
           "characterSize": 20,
           "color": {
@@ -836,7 +1021,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Press Spacebar to Jump",
-            "font": "AtkinsonHyperlegible-Regular.ttf",
+            "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
             "characterSize": 20,
@@ -869,7 +1054,7 @@
           "effects": [],
           "behaviors": [],
           "string": "Arrow Keys to Move",
-          "font": "AtkinsonHyperlegible-Regular.ttf",
+          "font": "",
           "textAlignment": "left",
           "characterSize": 20,
           "color": {
@@ -892,7 +1077,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Arrow Keys to Move",
-            "font": "AtkinsonHyperlegible-Regular.ttf",
+            "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
             "characterSize": 20,
@@ -911,6 +1096,155 @@
           "effects": [],
           "behaviors": [],
           "animations": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "042c9befeba7688e0f8c45341004faf3d881bca8edc6c51a3c751b2f102a4c0b",
+          "name": "Platform",
+          "persistentUuid": "0828aa6f-5481-43f4-8ec3-8728904b1642",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Platform.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 15
+                          },
+                          {
+                            "x": 0,
+                            "y": 15
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "DblJumpTut",
+          "persistentUuid": "8756c799-0958-44fa-890b-534a71f99973",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Press Spacebar Twice to Double Jump",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Press Spacebar Twice to Double Jump",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "PlatTut",
+          "persistentUuid": "16ddfda4-8125-439b-919f-f753e1428b0b",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Down Arrow to Fall Down Platform",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Down Arrow to Fall Down Platform",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -950,6 +1284,15 @@
           },
           {
             "objectName": "NewSprite"
+          },
+          {
+            "objectName": "Platform"
+          },
+          {
+            "objectName": "PlatTut"
+          },
+          {
+            "objectName": "DblJumpTut"
           }
         ]
       },
