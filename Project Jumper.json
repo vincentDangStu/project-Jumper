@@ -102,7 +102,7 @@
       {
         "file": "assets/Animations/idle_frog2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Animations/idle_frog2.png\",\"extension\":\".png\"}",
         "name": "assets\\Animations\\idle_frog2.png",
         "smoothed": false,
         "userAdded": false
@@ -110,7 +110,7 @@
       {
         "file": "assets/Animations/idle_frog3.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Animations/idle_frog3.png\",\"extension\":\".png\"}",
         "name": "assets\\Animations\\idle_frog3.png",
         "smoothed": false,
         "userAdded": false
@@ -134,7 +134,7 @@
       {
         "file": "assets/Animations/idle_right_frog.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Animations/idle_right_frog.png\",\"extension\":\".png\"}",
         "name": "assets\\Animations\\idle_right_frog.png",
         "smoothed": false,
         "userAdded": false
@@ -142,7 +142,7 @@
       {
         "file": "assets/Animations/idle_right_frog2.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/Animations/idle_right_frog2.png\",\"extension\":\".png\"}",
         "name": "assets\\Animations\\idle_right_frog2.png",
         "smoothed": false,
         "userAdded": false
@@ -2612,6 +2612,82 @@
               "parameters": [
                 "",
                 "\"Shop Scene\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsJumping"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"idle_right_frog\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"walk_right_frog\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsJumping"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"idle_left_frog\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"walk_left_frog\""
               ]
             }
           ]
