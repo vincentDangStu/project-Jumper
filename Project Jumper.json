@@ -909,7 +909,7 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 192,
           "keepRatio": true,
           "layer": "",
@@ -2934,10 +2934,11 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
               },
               "parameters": [
-                "",
+                "Player",
+                "PlatformerObject",
                 "\"Down\""
               ]
             },
