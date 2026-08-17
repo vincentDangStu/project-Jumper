@@ -288,6 +288,105 @@
         "name": "walk_left_frog4",
         "smoothed": false,
         "userAdded": false
+<<<<<<< Updated upstream
+=======
+      },
+      {
+        "file": "assets/walk_right_frog.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_right_frog",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_right_frog2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_right_frog2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_right_frog3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_right_frog3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_right_frog4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_right_frog4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_left_frog5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_left_frog5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_left_frog6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_left_frog6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_left_frog7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_left_frog7",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_left_frog8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_left_frog8",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle_right_frog.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_right_frog",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle_right_frog2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_right_frog2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle_left_frog.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_left_frog",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle_left_frog2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_left_frog2",
+        "smoothed": false,
+        "userAdded": false
+>>>>>>> Stashed changes
       }
     ]
   },
@@ -320,7 +419,11 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
+<<<<<<< Updated upstream
         "zoomFactor": 2.514367296498791,
+=======
+        "zoomFactor": 0.3673257545058889,
+>>>>>>> Stashed changes
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -338,15 +441,26 @@
         {
           "angle": 0,
           "customSize": true,
+<<<<<<< Updated upstream
           "depth": 1,
           "height": 64,
+=======
+          "depth": 4,
+          "height": 256,
+>>>>>>> Stashed changes
           "keepRatio": true,
           "layer": "",
           "name": "Player",
           "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
+<<<<<<< Updated upstream
           "width": 64,
           "x": 384,
           "y": 288,
+=======
+          "width": 256,
+          "x": 384,
+          "y": 192,
+>>>>>>> Stashed changes
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -790,7 +904,11 @@
           ],
           "animations": [
             {
+<<<<<<< Updated upstream
               "name": "idle_frog",
+=======
+              "name": "idle_right_frog",
+>>>>>>> Stashed changes
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -800,7 +918,11 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "idle_frog2",
+=======
+                      "image": "idle_right_frog",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -836,7 +958,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "idle_frog3",
+=======
+                      "image": "idle_right_frog2",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -885,7 +1011,11 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "walk_frog",
+=======
+                      "image": "walk_right_frog",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -921,7 +1051,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "walk_frog2",
+=======
+                      "image": "walk_right_frog2",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -957,7 +1091,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "walk_frog3",
+=======
+                      "image": "walk_right_frog3",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -993,7 +1131,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "walk_frog4",
+=======
+                      "image": "walk_right_frog4",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1042,7 +1184,11 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "walk_left_frog",
+=======
+                      "image": "walk_left_frog5",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1059,7 +1205,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "walk_left_frog2",
+=======
+                      "image": "walk_left_frog6",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1076,7 +1226,11 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "walk_left_frog3",
+=======
+                      "image": "walk_left_frog7",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1093,7 +1247,58 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
+<<<<<<< Updated upstream
                       "image": "walk_left_frog4",
+=======
+                      "image": "walk_left_frog8",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "idle_left_frog",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "idle_left_frog",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "idle_left_frog2",
+>>>>>>> Stashed changes
                       "points": [],
                       "originPoint": {
                         "name": "origine",
