@@ -589,7 +589,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8993607583666955,
+        "zoomFactor": 1.253038774059032,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -909,7 +909,7 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
+          "depth": 0,
           "height": 192,
           "keepRatio": true,
           "layer": "",
@@ -931,84 +931,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformEdgeCollision",
-          "persistentUuid": "cdba6108-3677-400e-817f-2a67924494e8",
-          "width": 64,
-          "x": 1792,
-          "y": 192,
-          "zOrder": -1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "flippedX": true,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformEdgeCollision",
-          "persistentUuid": "148cbc2a-2786-4e9c-a911-55cdff59d210",
-          "width": 64,
-          "x": 1856,
-          "y": 192,
-          "zOrder": -2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformEdgeCollision",
-          "persistentUuid": "6aa56c0e-cdf0-4621-a2bc-b30356c454b2",
-          "width": 64,
-          "x": 1856,
-          "y": 128,
-          "zOrder": -3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "flippedX": true,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformEdgeCollision",
-          "persistentUuid": "c3c3d4e0-8e59-4e5d-9446-d7d9650e8818",
-          "width": 64,
-          "x": 1920,
-          "y": 128,
-          "zOrder": -3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 64,
           "keepRatio": true,
           "layer": "Collision",
           "name": "BigPlatformMiddleCollision",
           "persistentUuid": "06267568-9c82-40de-8796-b00bfd1ba07c",
-          "width": 64,
-          "x": 2048,
+          "width": 384,
+          "x": 1984,
           "y": 64,
           "zOrder": 25,
           "numberProperties": [],
@@ -1018,154 +948,50 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformEdgeCollision",
-          "persistentUuid": "54beda5d-990d-4a7a-ae17-734dfa8a7716",
-          "width": 64,
-          "x": 1984,
-          "y": 64,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "flippedX": true,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformEdgeCollision",
-          "persistentUuid": "1f227d1d-cce5-4031-a6a7-62b5696bef7f",
-          "width": 64,
-          "x": 2304,
-          "y": 64,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformMiddleCollision",
-          "persistentUuid": "c24d8221-30ae-410c-956d-58426de61531",
-          "width": 64,
-          "x": 2240,
-          "y": 64,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformMiddleCollision",
-          "persistentUuid": "49ae0dba-485e-4e6f-b67d-c6d16797251a",
-          "width": 64,
-          "x": 2112,
-          "y": 64,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformMiddleCollision",
-          "persistentUuid": "694c82d5-0443-4e0e-a3e0-d4a793cb1ccf",
-          "width": 64,
-          "x": 2176,
-          "y": 64,
-          "zOrder": 24,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformEdgeCollision",
-          "persistentUuid": "c45d9643-48a8-4047-b47a-5f3f569d1d4f",
-          "width": 64,
-          "x": 2176,
-          "y": 128,
-          "zOrder": 26,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "flippedX": true,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformEdgeCollision",
-          "persistentUuid": "24f17ac3-bcdf-40f5-b983-4c36e65e657c",
-          "width": 64,
-          "x": 2368,
-          "y": 128,
-          "zOrder": 27,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "Collision",
-          "name": "BigPlatformMiddleCollision",
-          "persistentUuid": "9fbcd49a-1aa0-4dc2-aa0c-eaaba8098e29",
-          "width": 64,
-          "x": 2240,
-          "y": 128,
-          "zOrder": 28,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 64,
           "keepRatio": true,
           "layer": "Collision",
           "name": "BigPlatformMiddleCollision",
           "persistentUuid": "36d3b7a5-a025-4c47-bc14-baa33491dc42",
-          "width": 64,
-          "x": 2304,
+          "width": 256,
+          "x": 2176,
           "y": 128,
           "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "Collision",
+          "name": "BigPlatformMiddleCollision",
+          "persistentUuid": "d5747553-ddb5-48ff-b493-b3e2458a9d60",
+          "width": 128,
+          "x": 1792,
+          "y": 192,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "Collision",
+          "name": "BigPlatformMiddleCollision",
+          "persistentUuid": "70f88f5c-4680-4148-98c8-ef4f55ccb4c4",
+          "width": 128,
+          "x": 1856,
+          "y": 128,
+          "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2047,15 +1873,7 @@
           "type": "TileMap::SimpleTileMap",
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": false,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
+          "behaviors": [],
           "content": {
             "atlasImage": "assets/Background/ObjectTileset.png",
             "rowCount": 8,
@@ -2075,9 +1893,9 @@
           "effects": [],
           "behaviors": [
             {
+              "canBeGrabbed": false,
               "name": "Platform",
               "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
               "platformType": "Jumpthru",
               "yGrabOffset": 0
             }
@@ -2145,9 +1963,9 @@
           "effects": [],
           "behaviors": [
             {
+              "canBeGrabbed": false,
               "name": "Platform",
               "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
               "platformType": "Jumpthru",
               "yGrabOffset": 0
             }
@@ -2925,103 +2743,6 @@
               "parameters": [
                 "",
                 "\"Shop Scene\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject",
-                "\"Down\""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "BigPlatformMiddleCollision",
-                    "",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "Player",
-                    "BigPlatformEdgeCollision",
-                    "",
-                    "",
-                    "no"
-                  ]
-                }
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "BigPlatformEdgeCollision",
-                "Platform",
-                "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "BigPlatformMiddleCollision",
-                "Platform",
-                "no"
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "BigPlatformEdgeCollision",
-                "Platform",
-                "yes"
-              ]
-            },
-            {
-              "type": {
-                "value": "ActivateBehavior"
-              },
-              "parameters": [
-                "BigPlatformMiddleCollision",
-                "Platform",
-                "yes"
               ]
             }
           ]
