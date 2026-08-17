@@ -484,7 +484,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2725359896772988,
+        "zoomFactor": 0.8141881203710091,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -502,15 +502,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 4,
-          "height": 256,
+          "depth": 2,
+          "height": 128,
           "keepRatio": true,
           "layer": "",
           "name": "Player",
           "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
-          "width": 256,
-          "x": 384,
-          "y": 192,
+          "width": 128,
+          "x": 416,
+          "y": 320,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -716,15 +716,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "Coins",
+          "name": "FlowerPickup",
           "persistentUuid": "3ffadb32-5a97-4726-9a20-5778be5e8ad7",
-          "width": 0,
+          "width": 32,
           "x": 1856,
-          "y": 184,
+          "y": 160,
           "zOrder": 17,
           "numberProperties": [],
           "stringProperties": [],
@@ -732,15 +733,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "Coins",
+          "name": "FlowerPickup",
           "persistentUuid": "6723245c-dbb3-4f98-85f5-85f6a5567aa2",
-          "width": 0,
+          "width": 32,
           "x": 1920,
-          "y": 105,
+          "y": 96,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -748,15 +750,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "Coins",
+          "name": "FlowerPickup",
           "persistentUuid": "93fa23d6-47bf-436e-b2f4-c47e0cd393c9",
-          "width": 0,
-          "x": 2058,
-          "y": 25,
+          "width": 32,
+          "x": 2048,
+          "y": 32,
           "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
@@ -764,15 +767,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "Coins",
+          "name": "FlowerPickup",
           "persistentUuid": "3bcb8413-8ad1-453e-a21b-d1d9a019b754",
-          "width": 0,
+          "width": 32,
           "x": 2208,
-          "y": 27,
+          "y": 32,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -780,16 +784,34 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
           "keepRatio": true,
           "layer": "",
-          "name": "Coins",
+          "name": "FlowerPickup",
           "persistentUuid": "4c24af25-22e3-4801-b7c7-88e195f750e7",
-          "width": 0,
-          "x": 2255,
-          "y": 93,
+          "width": 32,
+          "x": 2240,
+          "y": 96,
           "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FlowerPickup",
+          "persistentUuid": "c3a65cbc-5c18-4aa4-9ed9-86ada59aabee",
+          "width": 32,
+          "x": 1920,
+          "y": 96,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -927,7 +949,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
                       "hasCustomCollisionMask": true,
@@ -944,7 +985,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -977,19 +1037,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 21,
-                            "y": 22
-                          },
-                          {
-                            "x": 22.5,
-                            "y": 32
+                            "x": 23.5,
+                            "y": 20
                           },
                           {
                             "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          },
+                          {
+                            "x": 23.5,
                             "y": 32
                           }
                         ]
@@ -1013,19 +1073,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 11.5,
-                            "y": 22
-                          },
-                          {
-                            "x": 21,
-                            "y": 22
-                          },
-                          {
-                            "x": 22.5,
-                            "y": 32
+                            "x": 23.5,
+                            "y": 20
                           },
                           {
                             "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          },
+                          {
+                            "x": 23.5,
                             "y": 32
                           }
                         ]
@@ -1062,19 +1122,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 9.5,
-                            "y": 23
-                          },
-                          {
-                            "x": 22.5,
-                            "y": 23
-                          },
-                          {
                             "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
                             "y": 32
                           },
                           {
-                            "x": 7.5,
+                            "x": 23.5,
                             "y": 32
                           }
                         ]
@@ -1098,19 +1158,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 9.5,
-                            "y": 23
-                          },
-                          {
-                            "x": 22.5,
-                            "y": 23
-                          },
-                          {
                             "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
                             "y": 32
                           },
                           {
-                            "x": 7.5,
+                            "x": 23.5,
                             "y": 32
                           }
                         ]
@@ -1134,19 +1194,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 9.5,
-                            "y": 23
-                          },
-                          {
-                            "x": 22.5,
-                            "y": 23
-                          },
-                          {
                             "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
                             "y": 32
                           },
                           {
-                            "x": 7.5,
+                            "x": 23.5,
                             "y": 32
                           }
                         ]
@@ -1170,19 +1230,19 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 9.5,
-                            "y": 23
-                          },
-                          {
-                            "x": 22.5,
-                            "y": 23
-                          },
-                          {
                             "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
                             "y": 32
                           },
                           {
-                            "x": 7.5,
+                            "x": 23.5,
                             "y": 32
                           }
                         ]
@@ -1216,7 +1276,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
                       "hasCustomCollisionMask": true,
@@ -1233,7 +1312,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
                       "hasCustomCollisionMask": true,
@@ -1250,7 +1348,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     },
                     {
                       "hasCustomCollisionMask": true,
@@ -1267,7 +1384,26 @@
                         "x": 0,
                         "y": 0
                       },
-                      "customCollisionMask": []
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23.5,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 20
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
                     }
                   ]
                 }
@@ -1278,7 +1414,7 @@
         {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
-          "name": "Coins",
+          "name": "FlowerPickup",
           "persistentUuid": "b597ee8d-860a-4675-8b45-d7dd33e947fa",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1296,7 +1432,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\Sprites\\StartingPixelCoin.png",
+                      "image": "assets\\Sprites\\FlowerPickup.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1792,7 +1928,7 @@
             "objectName": "Platform_Ground"
           },
           {
-            "objectName": "Coins"
+            "objectName": "FlowerPickup"
           },
           {
             "folderName": "Mobile Controls",
@@ -1875,7 +2011,7 @@
               },
               "parameters": [
                 "Player",
-                "Coins",
+                "FlowerPickup",
                 "",
                 "",
                 ""
@@ -1888,7 +2024,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "Coins",
+                "FlowerPickup",
                 ""
               ]
             },
@@ -1898,9 +2034,9 @@
               },
               "parameters": [
                 "",
-                "assets/CoinPickUp.wav",
+                "assets\\Sounds\\CoinPickUp.wav",
                 "",
-                "80",
+                "50",
                 "RandomFloatInRange(0.75,1)"
               ]
             }
