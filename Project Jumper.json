@@ -170,16 +170,124 @@
         "userAdded": false
       },
       {
-        "file": "assets/Platform.png",
+        "file": "assets/Frog.png",
         "kind": "image",
         "metadata": "",
-        "name": "Platform.png",
+        "name": "assets/Frog.png",
         "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pirate Bomb Pack/Tile Sets/7ae5cb8ceac2358b2318dee281077e1a536487677fd321fe923540e952cdbd32_Platform.png",
-          "name": "Platform.png"
-        }
+        "userAdded": false
+      },
+      {
+        "file": "assets/Frog2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Frog",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Player.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Player",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Frog2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Frog2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle_frog.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_frog",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_frog.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_frog",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_frog2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_frog2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_frog3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_frog3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_frog4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_frog4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle_frog2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_frog2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/idle_frog3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_frog3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_left_frog.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_left_frog",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_left_frog2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_left_frog2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_left_frog3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_left_frog3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/walk_left_frog4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "walk_left_frog4",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -201,7 +309,7 @@
       "title": "",
       "v": 255,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -211,8 +319,8 @@
         "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.6040838749988958,
+        "snap": true,
+        "zoomFactor": 2.514367296498791,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -229,15 +337,16 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 78.99999999999999,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
           "keepRatio": true,
           "layer": "",
           "name": "Player",
           "persistentUuid": "4ded1d81-e820-41d3-868a-3f314e5850bd",
-          "width": 79,
-          "x": 168,
-          "y": 414,
+          "width": 64,
+          "x": 384,
+          "y": 288,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -681,16 +790,17 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "idle_frog",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.5,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\StartingPixelPlayer.png",
+                      "image": "idle_frog2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -706,23 +816,297 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 2
+                            "x": 11.5,
+                            "y": 22
                           },
                           {
-                            "x": 32,
-                            "y": 2
+                            "x": 21,
+                            "y": 22
                           },
                           {
-                            "x": 32,
+                            "x": 22.5,
                             "y": 32
                           },
                           {
-                            "x": 0,
+                            "x": 8,
                             "y": 32
                           }
                         ]
                       ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "idle_frog3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11.5,
+                            "y": 22
+                          },
+                          {
+                            "x": 21,
+                            "y": 22
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 8,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "walk_right_frog",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.25,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "walk_frog",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "walk_frog2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "walk_frog3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "walk_frog4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 23
+                          },
+                          {
+                            "x": 23.5,
+                            "y": 32
+                          },
+                          {
+                            "x": 7.5,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "walk_left_frog",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.25,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "walk_left_frog",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "walk_left_frog2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "walk_left_frog3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "walk_left_frog4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
                     }
                   ]
                 }
