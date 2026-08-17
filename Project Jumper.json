@@ -92,297 +92,365 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/Top arrow button2.png",
+        "file": "assets/Animations/idle_frog.png",
         "kind": "image",
         "metadata": "",
-        "name": "Top arrow button.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/On-Screen Controls/Sprites/Flat Dark/e3943e1b23ceb90f00fc5e7c0481c5147b983fdc5397fb3690e102e53ce72d4f_Top arrow button.png",
-          "name": "Top arrow button.png"
-        }
-      },
-      {
-        "file": "assets/Flat dark joystick border2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat dark joystick border.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/1db606cabd7372d1494ba5934bc25bcdd72f5a213c4a27509be57c3f4d5aecca_Flat dark joystick border.png",
-          "name": "Flat dark joystick border.png"
-        }
-      },
-      {
-        "file": "assets/Flat dark joystick thumb2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat dark joystick thumb.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Multitouch joysticks/10167ade22c4a6b48324e6c1d1bd6dc74179d7bed0775890903f418b4a05c8a1_Flat dark joystick thumb.png",
-          "name": "Flat dark joystick thumb.png"
-        }
-      },
-      {
-        "file": "assets/StartingPixelPlayer.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingPixelPlayer.png",
+        "name": "assets\\Animations\\idle_frog.png",
         "smoothed": false,
         "userAdded": false
       },
       {
-        "file": "assets/PixelBackground.png",
+        "file": "assets/Animations/idle_frog2.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\PixelBackground.png",
+        "name": "assets\\Animations\\idle_frog2.png",
         "smoothed": false,
         "userAdded": false
       },
       {
-        "file": "assets/StartingPixelGround.png",
+        "file": "assets/Animations/idle_frog3.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\StartingPixelGround.png",
+        "name": "assets\\Animations\\idle_frog3.png",
         "smoothed": false,
         "userAdded": false
       },
       {
-        "file": "assets/StartingPixelCoin.png",
+        "file": "assets/Animations/idle_left_frog.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\StartingPixelCoin.png",
+        "name": "assets\\Animations\\idle_left_frog.png",
         "smoothed": false,
         "userAdded": false
       },
       {
-        "file": "assets/CoinPickUp2.wav",
+        "file": "assets/Animations/idle_left_frog2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\idle_left_frog2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/idle_right_frog.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\idle_right_frog.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/idle_right_frog2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\idle_right_frog2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_frog.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_frog.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_frog2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_frog2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_frog3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_frog3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_frog4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_frog4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_left_frog.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_left_frog.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_left_frog2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_left_frog2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_left_frog3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_left_frog3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_left_frog4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_left_frog4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_left_frog5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_left_frog5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_left_frog6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_left_frog6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_left_frog7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_left_frog7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_left_frog8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_left_frog8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_right_frog.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_right_frog.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_right_frog2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_right_frog2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_right_frog3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_right_frog3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/walk_right_frog4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Animations\\walk_right_frog4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/FlowerPickup.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites\\FlowerPickup.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/Frog.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites\\Frog.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/Grandma Mouse.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites\\Grandma Mouse.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background/Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background\\Background.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background/PixelBackground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background\\PixelBackground.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background/Platform.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background\\Platform.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background/StartingGround.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background\\StartingGround.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background/StartingPixelGround.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Background\\StartingPixelGround.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/StartingCoin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites\\StartingCoin.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/StartingPixelCoin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites\\StartingPixelCoin.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/StartingPixelPlayer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites\\StartingPixelPlayer.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/StartingPlayer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sprites\\StartingPlayer.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/Flat dark joystick border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\Flat dark joystick border.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/Flat dark joystick border2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\Flat dark joystick border2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/Flat dark joystick thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\Flat dark joystick thumb.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/Flat dark joystick thumb2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\Flat dark joystick thumb2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/Top arrow button.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\Top arrow button.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/UI/Top arrow button2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\UI\\Top arrow button2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sounds/CoinPickUp.wav",
         "kind": "audio",
         "metadata": "",
-        "name": "assets/CoinPickUp.wav",
+        "name": "assets\\Sounds\\CoinPickUp.wav",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
       },
       {
-        "file": "assets/Frog.png",
-        "kind": "image",
+        "file": "assets/Sounds/CoinPickUp2.wav",
+        "kind": "audio",
         "metadata": "",
-        "name": "assets/Frog.png",
-        "smoothed": false,
+        "name": "assets\\Sounds\\CoinPickUp2.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
         "userAdded": false
       },
       {
-        "file": "assets/Frog2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Frog",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Player.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Player",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/Frog2.png",
-        "kind": "image",
+        "file": "assets/Fonts/OpenSans-VariableFont_wdth,wght.ttf",
+        "kind": "font",
         "metadata": "",
-        "name": "assets/Frog2.png",
-        "smoothed": false,
+        "name": "assets\\Fonts\\OpenSans-VariableFont_wdth,wght.ttf",
         "userAdded": false
       },
       {
-        "file": "assets/idle_frog.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "idle_frog",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_frog.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_frog",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_frog2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_frog2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_frog3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_frog3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_frog4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_frog4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/idle_frog2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "idle_frog2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/idle_frog3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "idle_frog3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_left_frog.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_left_frog",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_left_frog2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_left_frog2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_left_frog3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_left_frog3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_left_frog4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_left_frog4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_right_frog.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_right_frog",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_right_frog2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_right_frog2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_right_frog3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_right_frog3",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_right_frog4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_right_frog4",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_left_frog5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_left_frog5",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_left_frog6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_left_frog6",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_left_frog7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_left_frog7",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/walk_left_frog8.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "walk_left_frog8",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/idle_right_frog.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "idle_right_frog",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/idle_right_frog2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "idle_right_frog2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/idle_left_frog.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "idle_left_frog",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/idle_left_frog2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "idle_left_frog2",
-        "smoothed": false,
+        "file": "AtkinsonHyperlegible-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "AtkinsonHyperlegible-Regular.ttf",
         "userAdded": false
       }
     ]
@@ -416,7 +484,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3673257545058889,
+        "zoomFactor": 0.2725359896772988,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -444,56 +512,6 @@
           "x": 384,
           "y": 192,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 384,
-          "layer": "Background",
-          "locked": true,
-          "name": "Background",
-          "persistentUuid": "9d4a2623-239c-44d1-95a4-076307aa3170",
-          "width": 640,
-          "x": 320,
-          "y": 160,
-          "zOrder": -10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "MobileControls",
-          "name": "MoveJoystick",
-          "persistentUuid": "855d809a-f954-4072-86d5-1d6f0b24a066",
-          "width": 0,
-          "x": 176,
-          "y": 576,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 120,
-          "keepRatio": true,
-          "layer": "MobileControls",
-          "name": "JumpButton",
-          "persistentUuid": "b1d437ce-f3b4-4799-875e-bb51f731cef0",
-          "width": 120,
-          "x": 1104,
-          "y": 576,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -886,6 +904,53 @@
           ],
           "animations": [
             {
+              "name": "idle_left_frog",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Animations\\idle_right_frog.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Animations\\idle_right_frog2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "name": "idle_right_frog",
               "useMultipleDirections": false,
               "directions": [
@@ -896,7 +961,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "idle_right_frog",
+                      "image": "assets\\Animations\\idle_frog2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -932,7 +997,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "idle_right_frog2",
+                      "image": "assets\\Animations\\idle_frog3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -981,7 +1046,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "walk_right_frog",
+                      "image": "assets\\Animations\\walk_right_frog.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1017,7 +1082,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "walk_right_frog2",
+                      "image": "assets\\Animations\\walk_right_frog2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1053,7 +1118,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "walk_right_frog3",
+                      "image": "assets\\Animations\\walk_right_frog3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1089,7 +1154,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "walk_right_frog4",
+                      "image": "assets\\Animations\\walk_right_frog4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1138,7 +1203,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "walk_left_frog5",
+                      "image": "assets\\Animations\\walk_left_frog.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1155,7 +1220,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "walk_left_frog6",
+                      "image": "assets\\Animations\\walk_left_frog2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1172,7 +1237,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "walk_left_frog7",
+                      "image": "assets\\Animations\\walk_left_frog3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1189,54 +1254,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "walk_left_frog8",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "idle_left_frog",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.5,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "idle_left_frog",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "idle_left_frog2",
+                      "image": "assets\\Animations\\walk_left_frog4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1256,18 +1274,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 64,
-          "name": "Background",
-          "persistentUuid": "c143bfc4-ce06-468a-b935-fe1167822963",
-          "texture": "assets\\PixelBackground.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 64,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
         },
         {
           "adaptCollisionMaskAutomatically": false,
@@ -1290,7 +1296,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "assets\\StartingPixelCoin.png",
+                      "image": "assets\\Sprites\\StartingPixelCoin.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1315,6 +1321,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "9c727020616afdd6ba786b8af206a90481f07db0ca175ed6a4cc5b7e01c66d06",
           "name": "JumpButton",
+          "persistentUuid": "4faaf322-2db1-4d7b-95e9-f44cafe197a2",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -1413,6 +1420,7 @@
         {
           "assetStoreId": "e71bd69f896d6c7531b48c65ceb5da25071d4fbdeb518aeceecba8d21f34ed8d",
           "name": "MoveJoystick",
+          "persistentUuid": "dd2c9614-28f3-4c84-9b06-4fbc55079a2e",
           "type": "SpriteMultitouchJoystick::SpriteMultitouchJoystick",
           "variant": "",
           "variables": [],
@@ -1497,7 +1505,7 @@
           "height": 32,
           "name": "Platform_Ground",
           "persistentUuid": "5d0f3274-6ee2-4d95-85ae-09d1244c7e5c",
-          "texture": "assets\\StartingPixelGround.png",
+          "texture": "assets\\Background\\StartingGround.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -1782,9 +1790,6 @@
           },
           {
             "objectName": "Platform_Ground"
-          },
-          {
-            "objectName": "Background"
           },
           {
             "objectName": "Coins"
