@@ -517,7 +517,7 @@
         "userAdded": false
       },
       {
-        "file": "assets/CollisionSpritePlatform.png",
+        "file": "assets/Background/CollisionSpritePlatform.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "CollisionSpritePlatform",
@@ -525,10 +525,34 @@
         "userAdded": false
       },
       {
-        "file": "assets/BigPlatformMiddleCollision.png",
+        "file": "assets/Background/BigPlatformMiddleCollision.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "BigPlatformMiddleCollision",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/Grandma Mouse.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Sprites/Grandma Mouse.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/idle_left_granny.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_left_granny",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Animations/idle_left_granny2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle_left_granny2",
         "smoothed": false,
         "userAdded": false
       }
@@ -589,7 +613,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8993607583666966,
+        "zoomFactor": 0.96103686937151,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -978,15 +1002,15 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
-          "height": 64,
+          "depth": 4,
+          "height": 128,
           "keepRatio": true,
           "layer": "",
           "name": "Granny",
           "persistentUuid": "79e470a2-df60-4468-b035-d4765945b41e",
-          "width": 32,
-          "x": 2592,
-          "y": 320,
+          "width": 128,
+          "x": 2528,
+          "y": 256,
           "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
@@ -2028,7 +2052,178 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": []
+          "animations": [
+            {
+              "name": "idle_left_granny",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "idle_left_granny",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 14
+                          },
+                          {
+                            "x": 28,
+                            "y": 14
+                          },
+                          {
+                            "x": 28,
+                            "y": 32
+                          },
+                          {
+                            "x": 9,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "idle_left_granny2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 14
+                          },
+                          {
+                            "x": 28,
+                            "y": 14
+                          },
+                          {
+                            "x": 28,
+                            "y": 32
+                          },
+                          {
+                            "x": 9,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "idle_right_granny",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Sprites/Grandma Mouse",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 14
+                          },
+                          {
+                            "x": 28,
+                            "y": 14
+                          },
+                          {
+                            "x": 28,
+                            "y": 32
+                          },
+                          {
+                            "x": 9,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Sprites/Grandma Mouse",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 9,
+                            "y": 14
+                          },
+                          {
+                            "x": 28,
+                            "y": 14
+                          },
+                          {
+                            "x": 28,
+                            "y": 32
+                          },
+                          {
+                            "x": 9,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2036,6 +2231,9 @@
         "children": [
           {
             "objectName": "Player"
+          },
+          {
+            "objectName": "Granny"
           },
           {
             "objectName": "FlowerPickup"
@@ -2074,9 +2272,6 @@
                 "objectName": "BigPlatformMiddleCollision"
               }
             ]
-          },
-          {
-            "objectName": "Granny"
           }
         ]
       },
