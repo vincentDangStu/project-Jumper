@@ -555,6 +555,14 @@
         "name": "idle_left_granny2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/House.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "House",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -613,7 +621,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.96103686937151,
+        "zoomFactor": 0.5468750000000228,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -633,41 +641,7 @@
           "width": 128,
           "x": 416,
           "y": 320,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 81,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Platform_Ground",
-          "persistentUuid": "1c4f7ab9-04d4-4cee-8572-96199ce1245c",
-          "width": 3029,
-          "x": -164,
-          "y": 448,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 63,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Platform_Ground",
-          "persistentUuid": "f51ca400-10c8-4228-a38c-06eed097aaaa",
-          "width": 1643,
-          "x": 1222,
-          "y": 385,
-          "zOrder": 6,
+          "zOrder": 34,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -690,31 +664,34 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "flippedX": true,
+          "height": 256,
           "keepRatio": true,
           "layer": "",
           "name": "House",
           "persistentUuid": "346d3a02-4e3d-41f6-a7ba-6c9d7aba31e0",
-          "width": 0,
-          "x": -52,
-          "y": 257,
-          "zOrder": 8,
+          "width": 256,
+          "x": -64,
+          "y": 192,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
           "keepRatio": true,
           "layer": "",
           "name": "House",
           "persistentUuid": "0b10f36e-587c-4e07-8a7f-34fbd09b5a94",
-          "width": 0,
-          "x": 2649,
-          "y": 191,
+          "width": 256,
+          "x": 2624,
+          "y": 128,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -1707,16 +1684,58 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
+          "behaviors": [],
+          "animations": [
             {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "NormalPlatform",
-              "yGrabOffset": 0
+              "name": "House",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "House",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 8
+                          },
+                          {
+                            "x": 32,
+                            "y": 8
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
-          ],
-          "animations": []
+          ]
         },
         {
           "assetStoreId": "",
@@ -2394,7 +2413,7 @@
                 "",
                 "assets\\Sounds\\CoinPickUp.wav",
                 "",
-                "50",
+                "25",
                 "RandomFloatInRange(0.75,1)"
               ]
             },
