@@ -579,6 +579,49 @@
         "name": "assets/Background/MeadowsBackground.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Score counters/Kenney/Pixel art/5ae0a579dbe67c533d19b92f1c1c84cec739b7c22a689823c9e1ba19ee883c36_8BitOperatorPlus8Regular.png",
+          "name": "8BitOperatorPlus8Regular.png"
+        }
+      },
+      {
+        "file": "assets/Coin 1Bit Pixel.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Coin 1Bit Pixel.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Score counters/Kenney/Pixel art/7d5b5064878be9701f8b7b94b491815e295be16771ac9088b8146b48582ca48c_Coin 1Bit Pixel.png",
+          "name": "Coin 1Bit Pixel.png"
+        }
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular.fnt",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Score counters/Kenney/Pixel art/8826f8477c073a233f09326bd5bb208fdd51415e6bfdc3fe8c4b75ab5635521e_8BitOperatorPlus8Regular.fnt",
+          "name": "8BitOperatorPlus8Regular.fnt"
+        }
+      },
+      {
+        "file": "assets/Sprites/FlowerPickup.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Sprites/FlowerPickup.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -588,7 +631,7 @@
       "name": "counter",
       "persistentUuid": "f7eea4f2-8d71-4f8d-b2c0-e9a4958fe1bf",
       "type": "ScoreCounter::ScoreCounter",
-      "variant": "",
+      "variant": "FlowerCounter",
       "variables": [],
       "effects": [],
       "behaviors": [
@@ -616,15 +659,15 @@
   "variables": [],
   "layouts": [
     {
-      "b": 255,
+      "b": 100,
       "disableInputWhenNotFocused": true,
       "mangledName": "Game_32Scene",
       "name": "Game Scene",
-      "r": 255,
+      "r": 100,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 255,
+      "v": 100,
       "uiSettings": {
         "grid": true,
         "gridType": "rectangular",
@@ -637,7 +680,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6244537826600252,
+        "zoomFactor": 0.6672773998330256,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -855,8 +898,8 @@
           "name": "counter",
           "persistentUuid": "6126244f-880e-4b08-a072-2b8bf23c9961",
           "width": 64,
-          "x": 0,
-          "y": 11,
+          "x": 65,
+          "y": 38,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -2362,6 +2405,17 @@
             ]
           },
           {
+            "folderName": "Platform Collisions",
+            "children": [
+              {
+                "objectName": "BigPlatformEdgeCollision"
+              },
+              {
+                "objectName": "BigPlatformMiddleCollision"
+              }
+            ]
+          },
+          {
             "objectName": "House"
           },
           {
@@ -2372,17 +2426,6 @@
           },
           {
             "objectName": "FlowerPickup"
-          },
-          {
-            "folderName": "Platform Collisions",
-            "children": [
-              {
-                "objectName": "BigPlatformEdgeCollision"
-              },
-              {
-                "objectName": "BigPlatformMiddleCollision"
-              }
-            ]
           }
         ]
       },
@@ -40273,7 +40316,683 @@
               }
             ]
           },
-          "variants": []
+          "variants": [
+            {
+              "areaMaxX": 14,
+              "areaMaxY": 47,
+              "areaMaxZ": 1,
+              "areaMinX": -54,
+              "areaMinY": -17,
+              "areaMinZ": 0,
+              "name": "FlowerCounter",
+              "objects": [
+                {
+                  "adaptCollisionMaskAutomatically": false,
+                  "assetStoreId": "367a58ff120bef6532ea832ff97bb32fdbca604c7f08ab43a54fad9f667b9156",
+                  "name": "Icon",
+                  "persistentUuid": "d8ad4fb7-6455-420b-8f47-867a2139aef7",
+                  "type": "Sprite",
+                  "updateIfNotVisible": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "isFolded": true,
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 4,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 0,
+                      "topEdgeAnchor": 4,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "ShakeObject_PositionAngleScale",
+                      "type": "ScoreCounter::ShakeObject_PositionAngleScale",
+                      "Scale": "Scale",
+                      "Property": 7.081819056384756e-306
+                    }
+                  ],
+                  "animations": [
+                    {
+                      "name": "",
+                      "useMultipleDirections": false,
+                      "directions": [
+                        {
+                          "looping": true,
+                          "timeBetweenFrames": 0.025,
+                          "sprites": [
+                            {
+                              "hasCustomCollisionMask": true,
+                              "image": "assets/Sprites/FlowerPickup.png",
+                              "points": [],
+                              "originPoint": {
+                                "name": "origine",
+                                "x": 5,
+                                "y": 5
+                              },
+                              "centerPoint": {
+                                "automatic": true,
+                                "name": "centre",
+                                "x": 0,
+                                "y": 0
+                              },
+                              "customCollisionMask": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bold": true,
+                  "italic": true,
+                  "name": "Counter",
+                  "persistentUuid": "f91cf1ee-f44e-4d63-ab29-66d4ad116c48",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "isFolded": true,
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "leftEdgeAnchor": 1,
+                      "bottomEdgeAnchor": 4,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 4,
+                      "topEdgeAnchor": 4,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "RollingCounter",
+                      "type": "ScoreCounter::RollingCounter",
+                      "Text": "Text",
+                      "Prefix": "",
+                      "Suffix": "",
+                      "Duration": 1,
+                      "Increment": 1,
+                      "CounterValue": 0,
+                      "DisplayedValue": 0,
+                      "Speed": 0
+                    },
+                    {
+                      "name": "ShakeObject_PositionAngleScale",
+                      "type": "ScoreCounter::ShakeObject_PositionAngleScale",
+                      "Scale": "Scale",
+                      "Property": 7.02010802359022e-306
+                    }
+                  ],
+                  "string": "0",
+                  "font": "",
+                  "textAlignment": "left",
+                  "characterSize": 36,
+                  "color": {
+                    "b": 0,
+                    "g": 0,
+                    "r": 0
+                  },
+                  "content": {
+                    "bold": true,
+                    "isOutlineEnabled": true,
+                    "isShadowEnabled": false,
+                    "italic": true,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 10,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "0",
+                    "font": "",
+                    "textAlignment": "left",
+                    "verticalTextAlignment": "center",
+                    "characterSize": 36,
+                    "lineHeight": 0,
+                    "color": "0;0;0"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 30,
+                  "height": 64,
+                  "leftMargin": 30,
+                  "name": "Background",
+                  "rightMargin": 30,
+                  "texture": "",
+                  "tiled": true,
+                  "topMargin": 30,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 64,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "4823f168c941818ff4e0396fc6a3ccec2dc18ade7d350364d57d4f8f096cc9b9",
+                  "name": "BitmapCounter",
+                  "persistentUuid": "c28d33ea-e198-42e0-bdfe-e775c1f3a19a",
+                  "type": "BitmapText::BitmapTextObject",
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "leftEdgeAnchor": 1,
+                      "bottomEdgeAnchor": 4,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 4,
+                      "topEdgeAnchor": 4,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "RollingCounter",
+                      "type": "ScoreCounter::RollingCounter",
+                      "Text": "Text",
+                      "Prefix": "",
+                      "Suffix": "",
+                      "Duration": 1,
+                      "Increment": 1,
+                      "CounterValue": 0,
+                      "DisplayedValue": 0,
+                      "Speed": 0
+                    },
+                    {
+                      "name": "ShakeObject_PositionAngleScale",
+                      "type": "ScoreCounter::ShakeObject_PositionAngleScale",
+                      "Scale": "Scale",
+                      "Property": 7.081819056384756e-306
+                    }
+                  ],
+                  "content": {
+                    "text": "0",
+                    "opacity": 255,
+                    "scale": 5,
+                    "fontSize": 20,
+                    "tint": "255;255;255",
+                    "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular.fnt",
+                    "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular.png",
+                    "align": "left",
+                    "verticalTextAlignment": "top"
+                  }
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "Counter"
+                  },
+                  {
+                    "objectName": "Icon"
+                  },
+                  {
+                    "objectName": "Background"
+                  },
+                  {
+                    "objectName": "BitmapCounter"
+                  }
+                ]
+              },
+              "objectsGroups": [
+                {
+                  "name": "CounterText",
+                  "objects": [
+                    {
+                      "name": "Counter"
+                    },
+                    {
+                      "name": "BitmapCounter"
+                    }
+                  ]
+                }
+              ],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera2DPlaneMaxDrawingDistance": 5000,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 8,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "BitmapCounter",
+                  "persistentUuid": "0a180c36-877d-49af-ba0e-288d87d39590",
+                  "width": 7,
+                  "x": 7,
+                  "y": -4,
+                  "zOrder": 5,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 0,
+                  "height": 64,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "Icon",
+                  "persistentUuid": "e04c6684-1a19-48ec-87f0-fa3f26894d89",
+                  "width": 64,
+                  "x": -34,
+                  "y": 3,
+                  "zOrder": 6,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {
+                "grid": false,
+                "gridType": "rectangular",
+                "gridWidth": 32,
+                "gridHeight": 32,
+                "gridDepth": 32,
+                "gridOffsetX": 0,
+                "gridOffsetY": 0,
+                "gridOffsetZ": 0,
+                "gridColor": 10401023,
+                "gridAlpha": 0.8,
+                "snap": false,
+                "zoomFactor": 6.331976434249913,
+                "windowMask": false,
+                "selectedLayer": "",
+                "gameEditorMode": "instances-editor"
+              }
+            },
+            {
+              "areaMaxX": 17,
+              "areaMaxY": 10,
+              "areaMaxZ": 1,
+              "areaMinX": 0,
+              "areaMinY": 0,
+              "areaMinZ": 0,
+              "assetStoreAssetId": "4b66856bd15abf75e08f719848d18fe5c3af98fd478c13839136e4cf0311ff0e",
+              "assetStoreOriginalName": "Coin 1Bit Pixel",
+              "name": "Coin 1Bit Pixel",
+              "objects": [
+                {
+                  "adaptCollisionMaskAutomatically": false,
+                  "assetStoreId": "367a58ff120bef6532ea832ff97bb32fdbca604c7f08ab43a54fad9f667b9156",
+                  "name": "Icon",
+                  "persistentUuid": "d8ad4fb7-6455-420b-8f47-867a2139aef7",
+                  "type": "Sprite",
+                  "updateIfNotVisible": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "isFolded": true,
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 4,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 0,
+                      "topEdgeAnchor": 4,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "ShakeObject_PositionAngleScale",
+                      "type": "ScoreCounter::ShakeObject_PositionAngleScale",
+                      "Scale": "Scale",
+                      "Property": 7.081819056384756e-306
+                    }
+                  ],
+                  "animations": [
+                    {
+                      "name": "",
+                      "useMultipleDirections": false,
+                      "directions": [
+                        {
+                          "looping": true,
+                          "timeBetweenFrames": 0.025,
+                          "sprites": [
+                            {
+                              "hasCustomCollisionMask": true,
+                              "image": "assets\\Coin 1Bit Pixel.png",
+                              "points": [],
+                              "originPoint": {
+                                "name": "origine",
+                                "x": 5,
+                                "y": 5
+                              },
+                              "centerPoint": {
+                                "automatic": true,
+                                "name": "centre",
+                                "x": 0,
+                                "y": 0
+                              },
+                              "customCollisionMask": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "",
+                  "bold": true,
+                  "italic": true,
+                  "name": "Counter",
+                  "persistentUuid": "f91cf1ee-f44e-4d63-ab29-66d4ad116c48",
+                  "smoothed": true,
+                  "type": "TextObject::Text",
+                  "underlined": false,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "isFolded": true,
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "leftEdgeAnchor": 1,
+                      "bottomEdgeAnchor": 4,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 4,
+                      "topEdgeAnchor": 4,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "RollingCounter",
+                      "type": "ScoreCounter::RollingCounter",
+                      "Text": "Text",
+                      "Prefix": "",
+                      "Suffix": "",
+                      "Duration": 1,
+                      "Increment": 1,
+                      "CounterValue": 0,
+                      "DisplayedValue": 0,
+                      "Speed": 0
+                    },
+                    {
+                      "name": "ShakeObject_PositionAngleScale",
+                      "type": "ScoreCounter::ShakeObject_PositionAngleScale",
+                      "Scale": "Scale",
+                      "Property": 7.02010802359022e-306
+                    }
+                  ],
+                  "string": "0",
+                  "font": "",
+                  "textAlignment": "left",
+                  "characterSize": 36,
+                  "color": {
+                    "b": 0,
+                    "g": 0,
+                    "r": 0
+                  },
+                  "content": {
+                    "bold": true,
+                    "isOutlineEnabled": true,
+                    "isShadowEnabled": false,
+                    "italic": true,
+                    "outlineColor": "255;255;255",
+                    "outlineThickness": 10,
+                    "shadowAngle": 90,
+                    "shadowBlurRadius": 2,
+                    "shadowColor": "0;0;0",
+                    "shadowDistance": 4,
+                    "shadowOpacity": 127,
+                    "smoothed": true,
+                    "underlined": false,
+                    "text": "0",
+                    "font": "",
+                    "textAlignment": "left",
+                    "verticalTextAlignment": "center",
+                    "characterSize": 36,
+                    "lineHeight": 0,
+                    "color": "0;0;0"
+                  }
+                },
+                {
+                  "assetStoreId": "",
+                  "bottomMargin": 30,
+                  "height": 64,
+                  "leftMargin": 30,
+                  "name": "Background",
+                  "rightMargin": 30,
+                  "texture": "",
+                  "tiled": true,
+                  "topMargin": 30,
+                  "type": "PanelSpriteObject::PanelSprite",
+                  "width": 64,
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "bottomEdgeAnchor": 2,
+                      "leftEdgeAnchor": 1,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 2,
+                      "topEdgeAnchor": 1,
+                      "useLegacyBottomAndRightAnchors": false
+                    }
+                  ]
+                },
+                {
+                  "assetStoreId": "4823f168c941818ff4e0396fc6a3ccec2dc18ade7d350364d57d4f8f096cc9b9",
+                  "name": "BitmapCounter",
+                  "type": "BitmapText::BitmapTextObject",
+                  "variables": [],
+                  "effects": [],
+                  "behaviors": [
+                    {
+                      "name": "Anchor",
+                      "type": "AnchorBehavior::AnchorBehavior",
+                      "leftEdgeAnchor": 1,
+                      "bottomEdgeAnchor": 4,
+                      "relativeToOriginalWindowSize": true,
+                      "rightEdgeAnchor": 4,
+                      "topEdgeAnchor": 4,
+                      "useLegacyBottomAndRightAnchors": false
+                    },
+                    {
+                      "name": "RollingCounter",
+                      "type": "ScoreCounter::RollingCounter",
+                      "Text": "Text",
+                      "Prefix": "",
+                      "Suffix": "",
+                      "Duration": 1,
+                      "Increment": 1,
+                      "CounterValue": 0,
+                      "DisplayedValue": 0,
+                      "Speed": 0
+                    },
+                    {
+                      "name": "ShakeObject_PositionAngleScale",
+                      "type": "ScoreCounter::ShakeObject_PositionAngleScale",
+                      "Scale": "Scale",
+                      "Property": 7.081819056384756e-306
+                    }
+                  ],
+                  "content": {
+                    "text": "0",
+                    "opacity": 255,
+                    "scale": 1,
+                    "fontSize": 20,
+                    "tint": "255;255;255",
+                    "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular.fnt",
+                    "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular.png",
+                    "align": "left",
+                    "verticalTextAlignment": "top"
+                  }
+                }
+              ],
+              "objectsFolderStructure": {
+                "folderName": "__ROOT",
+                "children": [
+                  {
+                    "objectName": "Counter"
+                  },
+                  {
+                    "objectName": "Icon"
+                  },
+                  {
+                    "objectName": "Background"
+                  },
+                  {
+                    "objectName": "BitmapCounter"
+                  }
+                ]
+              },
+              "objectsGroups": [
+                {
+                  "name": "CounterText",
+                  "objects": [
+                    {
+                      "name": "Counter"
+                    },
+                    {
+                      "name": "BitmapCounter"
+                    }
+                  ]
+                }
+              ],
+              "layers": [
+                {
+                  "ambientLightColorB": 200,
+                  "ambientLightColorG": 200,
+                  "ambientLightColorR": 200,
+                  "camera2DPlaneMaxDrawingDistance": 5000,
+                  "camera3DFarPlaneDistance": 10000,
+                  "camera3DFieldOfView": 45,
+                  "camera3DNearPlaneDistance": 3,
+                  "cameraType": "",
+                  "followBaseLayerCamera": false,
+                  "isLightingLayer": false,
+                  "isLocked": false,
+                  "name": "",
+                  "renderingType": "",
+                  "visibility": true,
+                  "cameras": [
+                    {
+                      "defaultSize": true,
+                      "defaultViewport": true,
+                      "height": 0,
+                      "viewportBottom": 1,
+                      "viewportLeft": 0,
+                      "viewportRight": 1,
+                      "viewportTop": 0,
+                      "width": 0
+                    }
+                  ],
+                  "effects": []
+                }
+              ],
+              "instances": [
+                {
+                  "angle": 0,
+                  "customSize": false,
+                  "height": 53,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "Icon",
+                  "persistentUuid": "33104734-7e97-4243-a199-3470acd804d6",
+                  "width": 53,
+                  "x": 5,
+                  "y": 5,
+                  "zOrder": 3,
+                  "numberProperties": [
+                    {
+                      "name": "animation",
+                      "value": 0
+                    }
+                  ],
+                  "stringProperties": [],
+                  "initialVariables": []
+                },
+                {
+                  "angle": 0,
+                  "customSize": true,
+                  "depth": 1,
+                  "height": 8,
+                  "keepRatio": true,
+                  "layer": "",
+                  "name": "BitmapCounter",
+                  "persistentUuid": "0a180c36-877d-49af-ba0e-288d87d39590",
+                  "width": 7,
+                  "x": 10,
+                  "y": 2,
+                  "zOrder": 5,
+                  "numberProperties": [],
+                  "stringProperties": [],
+                  "initialVariables": []
+                }
+              ],
+              "editionSettings": {
+                "grid": false,
+                "gridType": "rectangular",
+                "gridWidth": 32,
+                "gridHeight": 32,
+                "gridDepth": 32,
+                "gridOffsetX": 0,
+                "gridOffsetY": 0,
+                "gridOffsetZ": 0,
+                "gridColor": 10401023,
+                "gridAlpha": 0.8,
+                "snap": false,
+                "zoomFactor": 19.554343855108407,
+                "windowMask": false,
+                "selectedLayer": "",
+                "gameEditorMode": "instances-editor"
+              }
+            }
+          ]
         }
       ]
     },
