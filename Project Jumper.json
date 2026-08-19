@@ -563,6 +563,22 @@
         "name": "House",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Background/Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Background/Background.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background/MeadowsBackground.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Background/MeadowsBackground.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -621,7 +637,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5468750000000228,
+        "zoomFactor": 0.6244537826600252,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -989,6 +1005,23 @@
           "x": 2528,
           "y": 256,
           "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 360,
+          "keepRatio": true,
+          "layer": "Background",
+          "name": "MeadowsBackground",
+          "persistentUuid": "ba935d05-ca2e-4bde-9fc5-45cc3beb50f5",
+          "width": 640,
+          "x": 320,
+          "y": 180,
+          "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1782,18 +1815,6 @@
           }
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite",
-          "persistentUuid": "0311463c-39ec-4ebe-ab8f-b41e4b202722",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": []
-        },
-        {
           "assetStoreId": "",
           "bold": false,
           "italic": false,
@@ -2243,11 +2264,106 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "MeadowsBackground",
+          "persistentUuid": "98366d7c-b803-4263-ae50-f3f2ba76eeb2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Background/MeadowsBackground.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 320,
+                            "y": 0
+                          },
+                          {
+                            "x": 320,
+                            "y": 180
+                          },
+                          {
+                            "x": 0,
+                            "y": 180
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
+          {
+            "folderName": "Tutorial-Text",
+            "children": [
+              {
+                "objectName": "DblJumpTut"
+              },
+              {
+                "objectName": "PlatTut"
+              },
+              {
+                "objectName": "MoveTut"
+              },
+              {
+                "objectName": "JumpTut"
+              }
+            ]
+          },
+          {
+            "folderName": "Background-Tilemaps",
+            "children": [
+              {
+                "objectName": "ObjectsTilemap"
+              },
+              {
+                "objectName": "MeadowsTilemap"
+              },
+              {
+                "objectName": "MeadowsBackground"
+              }
+            ]
+          },
+          {
+            "objectName": "House"
+          },
           {
             "objectName": "Player"
           },
@@ -2256,30 +2372,6 @@
           },
           {
             "objectName": "FlowerPickup"
-          },
-          {
-            "objectName": "JumpTut"
-          },
-          {
-            "objectName": "MoveTut"
-          },
-          {
-            "objectName": "House"
-          },
-          {
-            "objectName": "NewSprite"
-          },
-          {
-            "objectName": "PlatTut"
-          },
-          {
-            "objectName": "DblJumpTut"
-          },
-          {
-            "objectName": "MeadowsTilemap"
-          },
-          {
-            "objectName": "ObjectsTilemap"
           },
           {
             "folderName": "Platform Collisions",
