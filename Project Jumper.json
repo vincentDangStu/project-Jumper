@@ -2958,6 +2958,18 @@
                 "",
                 "\"e\""
               ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Granny",
+                "",
+                "",
+                ""
+              ]
             }
           ],
           "actions": [
