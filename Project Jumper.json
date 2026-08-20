@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 279,
+    "build": 280,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -638,6 +638,14 @@
         "name": "NewTiledSprite2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Background/TownTileset.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Background/TownTileset.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -696,7 +704,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7876290101674095,
+        "zoomFactor": 0.6244537826600268,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2458,6 +2466,30 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "name": "TownTileset",
+          "persistentUuid": "a0ca229c-8fad-43f1-8f3f-03d9d80cb6a0",
+          "type": "TileMap::SimpleTileMap",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "content": {
+            "atlasImage": "assets/Background/TownTileset.png",
+            "rowCount": 8,
+            "columnCount": 8,
+            "tileSize": 16,
+            "tilesWithHitBox": "2,1,0,3,4"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -2483,6 +2515,9 @@
           {
             "folderName": "Background-Tilemaps",
             "children": [
+              {
+                "objectName": "TownTileset"
+              },
               {
                 "objectName": "ObjectsTilemap"
               },
