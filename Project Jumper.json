@@ -2419,7 +2419,20 @@
           "type": "TiledSpriteObject::TiledSprite",
           "width": 16,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "color",
+              "doubleParameters": {
+                "padding": 4,
+                "thickness": 8
+              },
+              "stringParameters": {
+                "color": "245;166;35"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
             {
               "name": "InOnScreen",
@@ -2523,6 +2536,17 @@
                 "",
                 "2",
                 "\"Background\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Fly",
+                "Effect",
+                "\"color\"",
                 ""
               ]
             }
@@ -3227,7 +3251,7 @@
               "parameters": [
                 "Fly",
                 "InOnScreen",
-                "-30",
+                "-100",
                 ""
               ]
             },
@@ -3251,7 +3275,7 @@
                 "Player",
                 "Fly",
                 "1000",
-                ""
+                "1"
               ]
             },
             {
@@ -3270,6 +3294,79 @@
               "parameters": [
                 "Player",
                 "PlatformerObject"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Fly",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ClearForces"
+              },
+              "parameters": [
+                "Player"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "Fly",
+                "InOnScreen",
+                "-100",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Fly",
+                "Effect",
+                "\"color\"",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Fly",
+                "Effect",
+                "\"color\"",
+                ""
               ]
             }
           ]
