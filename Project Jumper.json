@@ -630,6 +630,14 @@
         "name": "NewTiledSprite",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewTiledSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewTiledSprite2",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -2439,6 +2447,17 @@
               "type": "IsOnScreen::InOnScreen"
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 16,
+          "name": "Tongue",
+          "texture": "NewTiledSprite2",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 16,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -2500,6 +2519,9 @@
           },
           {
             "objectName": "Fly"
+          },
+          {
+            "objectName": "Tongue"
           }
         ]
       },
@@ -3303,13 +3325,12 @@
           "conditions": [
             {
               "type": {
-                "value": "CollisionNP"
+                "value": "Distance"
               },
               "parameters": [
-                "Player",
                 "Fly",
-                "",
-                "",
+                "Player",
+                "50",
                 ""
               ]
             }
