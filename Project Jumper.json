@@ -646,6 +646,14 @@
         "name": "assets/Background/TownTileset.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -704,7 +712,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6244537826600268,
+        "zoomFactor": 0.667277399833028,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1123,6 +1131,40 @@
           "x": 2336,
           "y": 64,
           "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 1024,
+          "keepRatio": true,
+          "layer": "",
+          "name": "End",
+          "persistentUuid": "8759d977-a1da-423d-8b49-dd79518a865d",
+          "width": 64,
+          "x": -192,
+          "y": -448,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 864,
+          "keepRatio": true,
+          "layer": "",
+          "name": "End",
+          "persistentUuid": "7d5289b6-e07f-408f-8d97-2c686ab0089e",
+          "width": 64,
+          "x": 2880,
+          "y": -352,
+          "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2476,10 +2518,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ],
@@ -2490,6 +2532,79 @@
             "tileSize": 16,
             "tilesWithHitBox": "2,1,0,3,4"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "End",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "InOnScreen",
+              "type": "IsOnScreen::InOnScreen"
+            },
+            {
+              "canBeGrabbed": false,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2545,6 +2660,9 @@
           },
           {
             "objectName": "Player"
+          },
+          {
+            "objectName": "End"
           },
           {
             "objectName": "Granny"
@@ -2605,6 +2723,14 @@
                 "Effect",
                 "\"color\"",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "End"
               ]
             }
           ]
@@ -3321,6 +3447,15 @@
                 "PlatformerObject",
                 "\"Up\""
               ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnLadder"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
             }
           ],
           "actions": [
@@ -3368,6 +3503,15 @@
                 "50",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnLadder"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
             }
           ],
           "actions": [
@@ -3394,6 +3538,15 @@
                 "-100",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnLadder"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
             }
           ],
           "actions": [
@@ -3412,7 +3565,17 @@
         },
         {
           "type": "BuiltinCommonInstructions::Else",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnLadder"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -3422,6 +3585,75 @@
                 "Fly",
                 "Effect",
                 "\"color\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Camera Control"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+              },
+              "parameters": [
+                "End",
+                "InOnScreen",
+                "0",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Player",
+                "End",
+                "500",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "Player",
+                "SmoothCamera",
+                "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SmoothCamera::SmoothCamera::SetFollowOnX"
+              },
+              "parameters": [
+                "Player",
+                "SmoothCamera",
+                "yes",
                 ""
               ]
             }
