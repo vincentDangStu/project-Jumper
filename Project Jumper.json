@@ -720,7 +720,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.667277399833028,
+        "zoomFactor": 0.929687500000042,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -3970,23 +3970,6 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Continue",
-          "persistentUuid": "b5ecdb6b-3061-45af-9b3a-3026737245d3",
-          "width": 224,
-          "x": 28,
-          "y": 628,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "keepRatio": true,
@@ -4011,8 +3994,8 @@
           "name": "Restart",
           "persistentUuid": "2863230a-a59b-4bfc-a751-e5f9b2821477",
           "width": 208,
-          "x": 547,
-          "y": 630,
+          "x": 29,
+          "y": 626,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -4046,12 +4029,12 @@
           "effects": [],
           "behaviors": [
             {
+              "leftEdgeAnchor": 4,
               "name": "Anchor",
+              "rightEdgeAnchor": 4,
               "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
-              "leftEdgeAnchor": 1,
               "relativeToOriginalWindowSize": true,
-              "rightEdgeAnchor": 1,
               "topEdgeAnchor": 2,
               "useLegacyBottomAndRightAnchors": false
             }
@@ -4106,12 +4089,12 @@
           "effects": [],
           "behaviors": [
             {
+              "leftEdgeAnchor": 1,
               "name": "Anchor",
+              "rightEdgeAnchor": 1,
               "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
-              "leftEdgeAnchor": 4,
               "relativeToOriginalWindowSize": true,
-              "rightEdgeAnchor": 4,
               "topEdgeAnchor": 2,
               "useLegacyBottomAndRightAnchors": false
             }
