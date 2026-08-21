@@ -634,7 +634,7 @@
       {
         "file": "assets/NewTiledSprite2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/NewTiledSprite2.png\"}",
         "name": "NewTiledSprite2",
         "smoothed": false,
         "userAdded": false
@@ -652,6 +652,14 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Tongue.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Tongue",
         "smoothed": false,
         "userAdded": false
       }
@@ -1165,6 +1173,22 @@
           "x": 2880,
           "y": -352,
           "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Tongue",
+          "persistentUuid": "2919c06b-867d-4822-859c-0f3444f9b71e",
+          "width": 0,
+          "x": 544,
+          "y": 64,
+          "zOrder": 40,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2500,17 +2524,6 @@
         },
         {
           "assetStoreId": "",
-          "height": 16,
-          "name": "Tongue",
-          "texture": "NewTiledSprite2",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 16,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "",
           "name": "TownTileset",
           "persistentUuid": "a0ca229c-8fad-43f1-8f3f-03d9d80cb6a0",
           "type": "TileMap::SimpleTileMap",
@@ -2605,6 +2618,30 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "Tongue",
+          "type": "PrimitiveDrawing::Drawer",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "fillOpacity": 255,
+          "outlineSize": 4,
+          "outlineOpacity": 255,
+          "absoluteCoordinates": true,
+          "clearBetweenFrames": true,
+          "antialiasing": "none",
+          "fillColor": {
+            "r": 243,
+            "g": 0,
+            "b": 255
+          },
+          "outlineColor": {
+            "r": 245,
+            "g": 0,
+            "b": 223
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -3461,22 +3498,22 @@
           "actions": [
             {
               "type": {
-                "value": "AddForceTowardObject"
-              },
-              "parameters": [
-                "Player",
-                "Fly",
-                "1000",
-                "1"
-              ]
-            },
-            {
-              "type": {
                 "value": "PlatformBehavior::SimulateJumpKey"
               },
               "parameters": [
                 "Player",
                 "PlatformerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceTowardObject"
+              },
+              "parameters": [
+                "Player",
+                "Fly",
+                "500",
+                "1"
               ]
             },
             {
@@ -3591,6 +3628,46 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "IsTotalForceAngleTowardObject"
+              },
+              "parameters": [
+                "Player",
+                "Fly",
+                "360",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::IsOnLadder"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PrimitiveDrawing::LineV2"
+              },
+              "parameters": [
+                "Tongue",
+                "Player.CenterX()",
+                "Player.CenterY() + 32",
+                "Fly.X() + 8",
+                "Fly.Y() + 16",
+                "4"
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -3658,6 +3735,23 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Dialogue"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
