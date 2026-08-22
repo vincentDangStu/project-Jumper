@@ -744,7 +744,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7619362677198046,
+        "zoomFactor": 0.5468750000000326,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1634,7 +1634,7 @@
           "layer": "Collision",
           "name": "RectangularCollision",
           "persistentUuid": "27245aee-6bb0-4afb-859e-c070df2f2989",
-          "width": 1088,
+          "width": 1536,
           "x": 4672,
           "y": 384,
           "zOrder": 50,
@@ -2034,9 +2034,9 @@
               "JumpButton": "A"
             },
             {
-              "maxFallingSpeed": 600,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "maxFallingSpeed": 600,
               "acceleration": 1000,
               "deceleration": 4000,
               "maxSpeed": 250,
