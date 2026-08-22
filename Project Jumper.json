@@ -678,6 +678,14 @@
         "name": "Speech_Bubble",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -736,7 +744,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.2121641972174366,
+        "zoomFactor": 0.7619362677198046,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -1163,13 +1171,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 1024,
+          "height": 1824,
           "keepRatio": true,
           "layer": "",
           "name": "End",
           "persistentUuid": "8759d977-a1da-423d-8b49-dd79518a865d",
           "width": 64,
-          "x": -192,
+          "x": -160,
           "y": -448,
           "zOrder": 38,
           "numberProperties": [],
@@ -1180,7 +1188,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 864,
+          "height": 1824,
           "keepRatio": true,
           "layer": "",
           "name": "End",
@@ -1973,6 +1981,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 160,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Town_Sign",
+          "persistentUuid": "c4da3ca1-53e3-476d-88c9-b4133585885f",
+          "width": 160,
+          "x": 6144,
+          "y": 224,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2009,7 +2034,7 @@
               "JumpButton": "A"
             },
             {
-              "isFolded": true,
+              "maxFallingSpeed": 600,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1000,
@@ -2018,7 +2043,6 @@
               "gravity": 525,
               "jumpSpeed": 360,
               "jumpSustainTime": 0.3,
-              "maxFallingSpeed": 400,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": false,
@@ -3825,6 +3849,67 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Town_Sign",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16,
+                            "y": 21
+                          },
+                          {
+                            "x": 40,
+                            "y": 21
+                          },
+                          {
+                            "x": 40,
+                            "y": 64
+                          },
+                          {
+                            "x": 16,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -3886,6 +3971,9 @@
           },
           {
             "objectName": "End"
+          },
+          {
+            "objectName": "Town_Sign"
           },
           {
             "objectName": "Granny"
@@ -3986,7 +4074,7 @@
               "parameters": [
                 "Player",
                 ">",
-                "800"
+                "600"
               ]
             }
           ],
@@ -4481,11 +4569,13 @@
           "conditions": [
             {
               "type": {
-                "value": "PlatformBehavior::IsFalling"
+                "value": "PlatformBehavior::CurrentFallSpeed"
               },
               "parameters": [
                 "Player",
-                "PlatformerObject"
+                "PlatformerObject",
+                ">",
+                "0"
               ]
             }
           ],
@@ -4614,7 +4704,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Shop Interaction"
+          "comment": "General Interaction"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -4654,6 +4744,44 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"e\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Player",
+                "Town_Sign",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Town Scene\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
@@ -4687,15 +4815,6 @@
                 "Player",
                 "PlatformerObject",
                 "\"Up\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::IsOnLadder"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
               ]
             }
           ],
@@ -4744,15 +4863,6 @@
                 "50",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::IsOnLadder"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
-              ]
             }
           ],
           "actions": [
@@ -4779,15 +4889,6 @@
                 "-100",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::IsOnLadder"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
-              ]
             }
           ],
           "actions": [
@@ -4806,17 +4907,7 @@
         },
         {
           "type": "BuiltinCommonInstructions::Else",
-          "conditions": [
-            {
-              "type": {
-                "value": "PlatformBehavior::IsOnLadder"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
-              ]
-            }
-          ],
+          "conditions": [],
           "actions": [
             {
               "type": {
@@ -4843,15 +4934,6 @@
                 "Fly",
                 "360",
                 ""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::IsOnLadder"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
               ]
             }
           ],
@@ -6163,6 +6245,135 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "StayOnScreen",
+          "type": "StayOnScreen::StayOnScreen"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
+    },
+    {
+      "b": 255,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Town_32Scene",
+      "name": "Town Scene",
+      "r": 247,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 249,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
         },
         {
           "name": "StayOnScreen",
