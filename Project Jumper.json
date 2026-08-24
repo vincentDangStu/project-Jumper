@@ -709,11 +709,89 @@
         }
       ],
       "content": {}
+    },
+    {
+      "assetStoreId": "",
+      "name": "TownTileset",
+      "persistentUuid": "a0ca229c-8fad-43f1-8f3f-03d9d80cb6a0",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "NormalPlatform",
+          "yGrabOffset": 0
+        }
+      ],
+      "content": {
+        "atlasImage": "assets/Background/TownTileset.png",
+        "rowCount": 8,
+        "columnCount": 8,
+        "tileSize": 16,
+        "tilesWithHitBox": "2,1,0,3,4"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "ObjectsTilemap",
+      "persistentUuid": "88bfd407-b141-4e55-9075-ee73b6f7ba34",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "assets/Background/ObjectTileset.png",
+        "rowCount": 8,
+        "columnCount": 8,
+        "tileSize": 16,
+        "tilesWithHitBox": "0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "MeadowsTilemap",
+      "persistentUuid": "6781626e-8de5-484b-aaa2-6d7ab5f76f71",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "platformType": "Jumpthru",
+          "canBeGrabbed": true,
+          "yGrabOffset": 0
+        }
+      ],
+      "content": {
+        "atlasImage": "assets/Background/MeadowTileset.png",
+        "rowCount": 8,
+        "columnCount": 8,
+        "tileSize": 16,
+        "tilesWithHitBox": "0,1,2,3,4"
+      }
     }
   ],
   "objectsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
+      {
+        "folderName": "Background-Tilemaps",
+        "children": [
+          {
+            "objectName": "MeadowsTilemap"
+          },
+          {
+            "objectName": "ObjectsTilemap"
+          },
+          {
+            "objectName": "TownTileset"
+          }
+        ]
+      },
       {
         "objectName": "counter"
       }
@@ -744,7 +822,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5468750000000326,
+        "zoomFactor": 0.37971210019481577,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2875,46 +2953,6 @@
           }
         },
         {
-          "assetStoreId": "",
-          "name": "MeadowsTilemap",
-          "persistentUuid": "6781626e-8de5-484b-aaa2-6d7ab5f76f71",
-          "type": "TileMap::SimpleTileMap",
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "platformType": "Jumpthru",
-              "canBeGrabbed": true,
-              "yGrabOffset": 0
-            }
-          ],
-          "content": {
-            "atlasImage": "assets/Background/MeadowTileset.png",
-            "rowCount": 8,
-            "columnCount": 8,
-            "tileSize": 16,
-            "tilesWithHitBox": "0,1,2,3,4"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "ObjectsTilemap",
-          "persistentUuid": "88bfd407-b141-4e55-9075-ee73b6f7ba34",
-          "type": "TileMap::SimpleTileMap",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "atlasImage": "assets/Background/ObjectTileset.png",
-            "rowCount": 8,
-            "columnCount": 8,
-            "tileSize": 16,
-            "tilesWithHitBox": "0"
-          }
-        },
-        {
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "BigPlatformEdgeCollision",
@@ -3331,30 +3369,6 @@
               "type": "IsOnScreen::InOnScreen"
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "TownTileset",
-          "persistentUuid": "a0ca229c-8fad-43f1-8f3f-03d9d80cb6a0",
-          "type": "TileMap::SimpleTileMap",
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "NormalPlatform",
-              "yGrabOffset": 0
-            }
-          ],
-          "content": {
-            "atlasImage": "assets/Background/TownTileset.png",
-            "rowCount": 8,
-            "columnCount": 8,
-            "tileSize": 16,
-            "tilesWithHitBox": "2,1,0,3,4"
-          }
         },
         {
           "adaptCollisionMaskAutomatically": true,
@@ -3916,6 +3930,9 @@
         "folderName": "__ROOT",
         "children": [
           {
+            "objectName": "MeadowsBackground"
+          },
+          {
             "folderName": "Tutorial-Text",
             "children": [
               {
@@ -3929,23 +3946,6 @@
               },
               {
                 "objectName": "JumpTut"
-              }
-            ]
-          },
-          {
-            "folderName": "Background-Tilemaps",
-            "children": [
-              {
-                "objectName": "TownTileset"
-              },
-              {
-                "objectName": "ObjectsTilemap"
-              },
-              {
-                "objectName": "MeadowsTilemap"
-              },
-              {
-                "objectName": "MeadowsBackground"
               }
             ]
           },
@@ -6015,6 +6015,10 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
         },
@@ -6029,6 +6033,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "TileMap",
+          "type": "TileMap::TileMapBehavior"
         }
       ]
     },
@@ -6239,6 +6247,10 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
         },
@@ -6253,6 +6265,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "TileMap",
+          "type": "TileMap::TileMapBehavior"
         }
       ]
     },
@@ -6961,6 +6977,10 @@
           "type": "OpacityCapability::OpacityBehavior"
         },
         {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
+        {
           "name": "Resizable",
           "type": "ResizableCapability::ResizableBehavior"
         },
@@ -6975,6 +6995,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "TileMap",
+          "type": "TileMap::TileMapBehavior"
         }
       ]
     }
