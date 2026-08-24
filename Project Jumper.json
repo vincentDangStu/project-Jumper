@@ -6898,6 +6898,16 @@
             },
             {
               "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "Fly",
+                "Player.CenterX()",
+                "Player.CenterY()"
+              ]
+            },
+            {
+              "type": {
                 "value": "AddForceTowardObject"
               },
               "parameters": [
@@ -7006,6 +7016,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "Fly",
+                "Player.CenterX()",
+                "Player.CenterY()"
+              ]
+            },
             {
               "type": {
                 "value": "PrimitiveDrawing::LineV2"
