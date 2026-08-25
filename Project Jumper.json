@@ -6945,12 +6945,6 @@
                 "350",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
             }
           ],
           "actions": [
@@ -6975,13 +6969,14 @@
             },
             {
               "type": {
-                "value": "AddForceTowardObject"
+                "value": "AddForceTowardPosition"
               },
               "parameters": [
                 "Player",
-                "Fly",
-                "500",
-                "1"
+                "Fly.X()",
+                "Fly.Y()",
+                "2000",
+                "0"
               ]
             }
           ]
@@ -6994,9 +6989,9 @@
                 "value": "Distance"
               },
               "parameters": [
-                "Fly",
                 "Player",
-                "50",
+                "Fly",
+                "10",
                 ""
               ]
             }
