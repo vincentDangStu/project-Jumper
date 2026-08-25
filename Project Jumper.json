@@ -1521,12 +1521,7 @@
           "booleanParameters": {}
         }
       ],
-      "behaviors": [
-        {
-          "name": "InOnScreen",
-          "type": "IsOnScreen::InOnScreen"
-        }
-      ]
+      "behaviors": []
     },
     {
       "assetStoreId": "",
@@ -5437,7 +5432,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.8700232859857296,
+        "zoomFactor": 0.3553434558816987,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6932,23 +6927,23 @@
           "conditions": [
             {
               "type": {
-                "value": "IsOnScreen::InOnScreen::IsOnScreen"
-              },
-              "parameters": [
-                "Fly",
-                "InOnScreen",
-                "-100",
-                ""
-              ]
-            },
-            {
-              "type": {
                 "value": "PlatformBehavior::PlatformerObjectBehavior::IsUsingControl"
               },
               "parameters": [
                 "Player",
                 "PlatformerObject",
                 "\"Up\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Fly",
+                "Player",
+                "350",
+                ""
               ]
             }
           ],
@@ -7025,12 +7020,12 @@
           "conditions": [
             {
               "type": {
-                "value": "IsOnScreen::InOnScreen::IsOnScreen"
+                "value": "Distance"
               },
               "parameters": [
                 "Fly",
-                "InOnScreen",
-                "-100",
+                "Player",
+                "350",
                 ""
               ]
             }
