@@ -1610,7 +1610,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.37971210019481577,
+        "zoomFactor": 0.2912258866911287,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6945,6 +6945,12 @@
                 "350",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -6975,7 +6981,7 @@
                 "Player",
                 "Fly",
                 "500",
-                "0"
+                "1"
               ]
             }
           ]
