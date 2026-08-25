@@ -6975,16 +6975,7 @@
                 "Player",
                 "Fly",
                 "500",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::SetCanJump"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject"
+                "0"
               ]
             }
           ]
