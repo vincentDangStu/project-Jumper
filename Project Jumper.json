@@ -702,6 +702,30 @@
         "name": "Building2",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Background/HouseType1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Background/HouseType1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background/HouseType2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Background/HouseType2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Background/HouseType3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Background/HouseType3.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -757,7 +781,15 @@
       "type": "TileMap::SimpleTileMap",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "Jumpthru",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "content": {
         "atlasImage": "assets/Background/ObjectTileset.png",
         "rowCount": 8,
@@ -5201,7 +5233,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.7370816317994029,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6191,7 +6223,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2160739732387554,
+        "zoomFactor": 0.49508400737489106,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6203,99 +6235,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 32,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Floor",
-          "persistentUuid": "346442d6-5280-4246-b1e6-2f80d2a7658d",
-          "width": 3430,
-          "x": -12,
-          "y": 631,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 50,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Box",
-          "persistentUuid": "6f4c2294-10f8-42eb-b193-90c2b26a9623",
-          "width": 50,
-          "x": 571,
-          "y": 583,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 100,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Box",
-          "persistentUuid": "9b61c0be-9f22-4dd5-9734-25275165f7d5",
-          "width": 100,
-          "x": 619,
-          "y": 535,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 192,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "df444d5a-bf8c-43d8-abc8-f0aeee38da68",
-          "width": 286,
-          "x": 718,
-          "y": 442,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 348,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "7f11a3dc-62e9-4b29-8fc2-f1a69d149d6c",
-          "width": 286,
-          "x": 924,
-          "y": 287,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
           "height": 564,
           "keepRatio": true,
           "layer": "",
           "name": "Building",
           "persistentUuid": "40f69572-d8c0-4bd9-9fa5-d6bf9e98a889",
           "width": 348,
-          "x": 1593,
-          "y": 71,
+          "x": 1632,
+          "y": 76,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -6328,8 +6275,8 @@
           "name": "Building",
           "persistentUuid": "3e5931d3-7d9c-4416-a18c-dd16368fa724",
           "width": 346,
-          "x": 1868,
-          "y": 177,
+          "x": 1958,
+          "y": 187,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -6345,8 +6292,8 @@
           "name": "Building",
           "persistentUuid": "b5677575-5cef-43f2-a477-aeef3ee8571e",
           "width": 269,
-          "x": 2143,
-          "y": 356,
+          "x": 2259,
+          "y": 369,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -6362,8 +6309,8 @@
           "name": "Building",
           "persistentUuid": "4fc1ee35-1a2f-42da-bff8-f26d156b67ea",
           "width": 274,
-          "x": 2138,
-          "y": 69,
+          "x": 2286,
+          "y": 157,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -6379,8 +6326,8 @@
           "name": "Building",
           "persistentUuid": "027489f2-f7ea-4761-a0b0-3e4728d22330",
           "width": 314,
-          "x": 2412,
-          "y": 297,
+          "x": 2560,
+          "y": 306,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -6396,8 +6343,8 @@
           "name": "Building",
           "persistentUuid": "801a5294-f7cf-4f74-a923-67beccbca74d",
           "width": 311,
-          "x": 2412,
-          "y": 71,
+          "x": 2560,
+          "y": 190,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -6413,26 +6360,9 @@
           "name": "Building",
           "persistentUuid": "3a3a0e4c-928b-4ed6-9951-5a53d05d5ad4",
           "width": 434,
-          "x": 1792,
-          "y": -107,
+          "x": 1870,
+          "y": -96,
           "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 519,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "b9eb35f0-374b-4b02-b873-a1eb517c4a01",
-          "width": 268,
-          "x": 1011,
-          "y": 120,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6450,23 +6380,6 @@
           "x": 1009,
           "y": -254,
           "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 434,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "9e5a1a2f-4e11-4752-909b-360040d98e40",
-          "width": 323,
-          "x": 795,
-          "y": 201,
-          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6717,7 +6630,7 @@
           "width": 128,
           "x": 256,
           "y": 512,
-          "zOrder": 23,
+          "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6742,40 +6655,6 @@
               "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":54,\"dimY\":7,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10],[8,9,9,9,-2147483639,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,-2147483639,9,9,9,-2147483639,9,9,-2147483639,9,-2147483639,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,-2147483639,-2147483639,9,9,9,9,-2147483639,-2147483639,10],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,9,9,9,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,-2147483639,-2147483639,9,9,9,9,-2147483639,-2147483639,10],[8,9,9,9,9,9,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,-2147483639,9,9,10],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,-2147483639,9,9,10],[16,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,18]]}]}"
             }
           ],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 2752,
-          "keepRatio": true,
-          "layer": "",
-          "name": "End",
-          "persistentUuid": "7788f3ed-400d-4903-b97c-2ffc36bb06f0",
-          "width": 64,
-          "x": 3456,
-          "y": -1216,
-          "zOrder": 25,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 2592,
-          "keepRatio": true,
-          "layer": "",
-          "name": "End",
-          "persistentUuid": "72b8be0b-f91f-4f6c-8452-9c624aedd8a2",
-          "width": 64,
-          "x": -64,
-          "y": -1088,
-          "zOrder": 26,
-          "numberProperties": [],
-          "stringProperties": [],
           "initialVariables": []
         }
       ],
@@ -6889,6 +6768,189 @@
           "effects": [],
           "behaviors": [],
           "animations": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "TownHouse1",
+          "persistentUuid": "e7a56bc6-1b4e-43bd-8fd3-c040162d5527",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Background/HouseType1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 12
+                          },
+                          {
+                            "x": 29,
+                            "y": 12
+                          },
+                          {
+                            "x": 29,
+                            "y": 32
+                          },
+                          {
+                            "x": 3,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "TownHouse2",
+          "persistentUuid": "6ee4c405-dcee-4e9c-90d8-72e571bfea15",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Background/HouseType2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 29,
+                            "y": 3
+                          },
+                          {
+                            "x": 29,
+                            "y": 32
+                          },
+                          {
+                            "x": 3,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "TownHouse3",
+          "persistentUuid": "3909d735-95f4-48b4-962a-1fe49b40e69c",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Background/HouseType3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 2
+                          },
+                          {
+                            "x": 32,
+                            "y": 2
+                          },
+                          {
+                            "x": 32,
+                            "y": 32
+                          },
+                          {
+                            "x": 0,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -6908,6 +6970,15 @@
           },
           {
             "objectName": "Balloon"
+          },
+          {
+            "objectName": "TownHouse1"
+          },
+          {
+            "objectName": "TownHouse2"
+          },
+          {
+            "objectName": "TownHouse3"
           }
         ]
       },
