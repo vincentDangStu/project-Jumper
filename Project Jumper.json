@@ -1634,7 +1634,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5468750000000338,
+        "zoomFactor": 0.16031528804547643,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2078,14 +2078,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 1824,
+          "height": 2368,
           "keepRatio": true,
           "layer": "",
           "name": "End",
           "persistentUuid": "7d5289b6-e07f-408f-8d97-2c686ab0089e",
           "width": 64,
           "x": 6304,
-          "y": -320,
+          "y": -864,
           "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
@@ -4127,11 +4127,12 @@
           "actions": [
             {
               "type": {
-                "value": "PushScene"
+                "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"Town Scene\""
+                "\"Town Scene\"",
+                ""
               ]
             }
           ]
@@ -5362,13 +5363,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 1,
               "leftEdgeAnchor": 1,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 1,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -5392,13 +5393,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 1,
               "leftEdgeAnchor": 4,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 4,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -5422,13 +5423,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 1,
               "leftEdgeAnchor": 2,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 2,
               "topEdgeAnchor": 1,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -5454,13 +5455,13 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Anchor",
+              "type": "AnchorBehavior::AnchorBehavior",
               "bottomEdgeAnchor": 2,
               "leftEdgeAnchor": 4,
-              "name": "Anchor",
               "relativeToOriginalWindowSize": true,
               "rightEdgeAnchor": 4,
               "topEdgeAnchor": 2,
-              "type": "AnchorBehavior::AnchorBehavior",
               "useLegacyBottomAndRightAnchors": false
             }
           ],
@@ -5634,15 +5635,6 @@
                 },
                 {
                   "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Triple",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -5709,15 +5701,6 @@
                 },
                 {
                   "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Gravity",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetNumberVariable"
                   },
                   "parameters": [
@@ -5780,15 +5763,6 @@
                     "canGrapple",
                     "=",
                     "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "Grapple",
-                    ""
                   ]
                 },
                 {
@@ -5969,6 +5943,96 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Save Purchase"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "antiGrav",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Gravity",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "canGrapple",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Grapple",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "tripleJump",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Triple",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -6127,7 +6191,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.49508400737489106,
+        "zoomFactor": 0.2160739732387554,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6651,7 +6715,7 @@
           "name": "Player",
           "persistentUuid": "8876915f-6152-4b1b-a778-d6dbd9e47a30",
           "width": 128,
-          "x": -32,
+          "x": 256,
           "y": 512,
           "zOrder": 23,
           "numberProperties": [],
@@ -6678,6 +6742,40 @@
               "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":54,\"dimY\":7,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10],[8,9,9,9,-2147483639,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,-2147483639,9,9,9,-2147483639,9,9,-2147483639,9,-2147483639,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,-2147483639,-2147483639,9,9,9,9,-2147483639,-2147483639,10],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,9,9,9,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,-2147483639,-2147483639,9,9,9,9,-2147483639,-2147483639,10],[8,9,9,9,9,9,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,-2147483639,9,9,10],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,-2147483639,9,9,10],[16,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,18]]}]}"
             }
           ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 2752,
+          "keepRatio": true,
+          "layer": "",
+          "name": "End",
+          "persistentUuid": "7788f3ed-400d-4903-b97c-2ffc36bb06f0",
+          "width": 64,
+          "x": 3456,
+          "y": -1216,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 2592,
+          "keepRatio": true,
+          "layer": "",
+          "name": "End",
+          "persistentUuid": "72b8be0b-f91f-4f6c-8452-9c624aedd8a2",
+          "width": 64,
+          "x": -64,
+          "y": -1088,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
           "initialVariables": []
         }
       ],
@@ -6820,6 +6918,32 @@
             "includeConfig": 0
           },
           "target": "Player"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ScoreCounter::ScoreCounter::SetScore"
+              },
+              "parameters": [
+                "counter",
+                "=",
+                "count",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -7948,7 +8072,7 @@
               "parameters": [
                 "Player",
                 "End",
-                "500",
+                "600",
                 ""
               ]
             }
@@ -8072,6 +8196,18 @@
                 "PlatformerObject",
                 "/",
                 "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::MaxFallingSpeed"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                "/",
+                "2",
+                ""
               ]
             }
           ]
