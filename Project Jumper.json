@@ -5228,12 +5228,12 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 64,
+          "height": 117,
           "keepRatio": true,
           "layer": "",
           "name": "Triple",
           "persistentUuid": "6ce07841-b7fe-4aea-ad5b-b25d303c3b36",
-          "width": 267,
+          "width": 280,
           "x": 24,
           "y": 31,
           "zOrder": 2,
@@ -5245,13 +5245,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 64,
+          "height": 109,
           "keepRatio": true,
           "layer": "",
           "name": "Gravity",
           "persistentUuid": "ebd84378-26c5-4bb8-9f29-81634da6fd1e",
-          "width": 277,
-          "x": 512,
+          "width": 304,
+          "x": 496,
           "y": 32,
           "zOrder": 3,
           "numberProperties": [],
@@ -5262,13 +5262,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 64,
+          "height": 111,
           "keepRatio": true,
           "layer": "",
           "name": "Grapple",
           "persistentUuid": "a4e6a0c5-678e-453a-8131-b2ec06a60c9a",
-          "width": 272,
-          "x": 984,
+          "width": 278,
+          "x": 978,
           "y": 28,
           "zOrder": 4,
           "numberProperties": [],
@@ -5379,7 +5379,7 @@
             "BottomPadding": 6,
             "TopPadding": 0,
             "HoveredFadeOutDuration": 0,
-            "LabelText": "15 Flowers"
+            "LabelText": "Triple Jump\n15 Flowers"
           }
         },
         {
@@ -5409,7 +5409,7 @@
             "BottomPadding": 6,
             "TopPadding": 0,
             "HoveredFadeOutDuration": 0,
-            "LabelText": "20 Flowers"
+            "LabelText": "Low Gravity\n20 Flowers"
           }
         },
         {
@@ -5439,7 +5439,7 @@
             "BottomPadding": 6,
             "TopPadding": 0,
             "HoveredFadeOutDuration": 0,
-            "LabelText": "25 Flowers"
+            "LabelText": "Grappling\n25 Flowers"
           }
         },
         {
