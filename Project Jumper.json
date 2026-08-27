@@ -734,6 +734,14 @@
         "name": "Balloon",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Background/FoodStall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Background/FoodStall.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -6231,7 +6239,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4789341884535273,
+        "zoomFactor": 0.5843784410740983,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6239,23 +6247,6 @@
       "objectsGroups": [],
       "variables": [],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 564,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "40f69572-d8c0-4bd9-9fa5-d6bf9e98a889",
-          "width": 348,
-          "x": 1632,
-          "y": 76,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": true,
@@ -6269,108 +6260,6 @@
           "x": 1206,
           "y": 292,
           "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 453,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "3e5931d3-7d9c-4416-a18c-dd16368fa724",
-          "width": 346,
-          "x": 1958,
-          "y": 187,
-          "zOrder": 7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 271,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "b5677575-5cef-43f2-a477-aeef3ee8571e",
-          "width": 269,
-          "x": 2259,
-          "y": 369,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 291,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "4fc1ee35-1a2f-42da-bff8-f26d156b67ea",
-          "width": 274,
-          "x": 2286,
-          "y": 157,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 334,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "027489f2-f7ea-4761-a0b0-3e4728d22330",
-          "width": 314,
-          "x": 2560,
-          "y": 306,
-          "zOrder": 8,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 226,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "801a5294-f7cf-4f74-a923-67beccbca74d",
-          "width": 311,
-          "x": 2560,
-          "y": 190,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 736,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Building",
-          "persistentUuid": "3a3a0e4c-928b-4ed6-9951-5a53d05d5ad4",
-          "width": 434,
-          "x": 1870,
-          "y": -96,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6430,14 +6319,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 93,
+          "height": 96,
           "keepRatio": true,
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "77879da7-741d-4f4e-97a4-2ce99dbbff71",
-          "width": 121,
-          "x": 1607,
-          "y": -171,
+          "width": 96,
+          "x": 1632,
+          "y": -192,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -6447,13 +6336,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 93,
+          "height": 96,
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "24618fe5-145f-48a2-a9a1-1b22eb210b00",
-          "width": 124,
+          "width": 96,
           "x": 1344,
-          "y": -261,
+          "y": -256,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -6582,13 +6471,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 93,
+          "height": 96,
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "41aaead9-ca72-48a1-bffa-822e7d3a9303",
-          "width": 110,
+          "width": 96,
           "x": 1216,
-          "y": -637,
+          "y": -640,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -6598,13 +6487,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 93,
+          "height": 96,
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "7f5ab4c8-1161-4e11-afb9-d7acb52df3dc",
-          "width": 102,
+          "width": 96,
           "x": 1440,
-          "y": -733,
+          "y": -736,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -6614,13 +6503,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 93,
+          "height": 96,
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "fb6ec7d8-c115-4d37-abd5-3e79c1cc5e33",
-          "width": 101,
-          "x": 1659,
-          "y": -797,
+          "width": 96,
+          "x": 1664,
+          "y": -800,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -6638,7 +6527,7 @@
           "width": 128,
           "x": 256,
           "y": 512,
-          "zOrder": 100,
+          "zOrder": 108,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6652,7 +6541,7 @@
           "layer": "",
           "name": "TownTileset",
           "persistentUuid": "441d594f-9be3-47f0-a032-668cc7f6047c",
-          "width": 3456,
+          "width": 5184,
           "x": 0,
           "y": 640,
           "zOrder": 24,
@@ -6660,9 +6549,201 @@
           "stringProperties": [
             {
               "name": "tilemap",
-              "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":54,\"dimY\":7,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10],[8,9,9,9,-2147483639,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,-2147483639,9,9,9,-2147483639,9,9,-2147483639,9,-2147483639,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,-2147483639,-2147483639,9,9,9,9,-2147483639,-2147483639,10],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,9,9,9,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,-2147483639,-2147483639,9,9,9,9,-2147483639,-2147483639,10],[8,9,9,9,9,9,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,-2147483639,9,9,10],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,-2147483639,9,9,10],[16,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,18]]}]}"
+              "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":81,\"dimY\":7,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10],[8,9,9,9,-2147483639,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,-2147483639,9,9,9,-2147483639,9,9,-2147483639,9,-2147483639,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,-2147483639,-2147483639,9,9,9,9,-2147483639,-2147483639,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,9,9,9,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,-2147483639,-2147483639,9,9,9,9,-2147483639,-2147483639,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10],[8,9,9,9,9,9,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,-2147483639,9,9,9,9,9,9,9,9,-2147483639,-2147483639,-2147483639,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,-2147483639,9,9,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10],[8,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,-2147483639,-2147483639,9,9,10,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,10],[16,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,18]]}]}"
             }
           ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ObjectsTilemap",
+          "persistentUuid": "09f9162c-311a-4a94-b17f-af24ba71cff1",
+          "width": 2240,
+          "x": 640,
+          "y": 512,
+          "zOrder": 103,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":35,\"dimY\":2,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0],[0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,0,-1,-1,-1,-1,-1,-1,-1,0,-1,-1,-1,-1,-1,-1,-1,0,0]]}]}"
+            }
+          ],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TownHouse1",
+          "persistentUuid": "b98b10d1-0122-4025-994d-8658f9591b66",
+          "width": 256,
+          "x": 672,
+          "y": 384,
+          "zOrder": 102,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TownHouse2",
+          "persistentUuid": "95dc5e87-2702-4aa9-bfae-1cdb82af9869",
+          "width": 256,
+          "x": 896,
+          "y": 384,
+          "zOrder": 105,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TownHouse1",
+          "persistentUuid": "2e07da0f-37dc-4b48-9ea7-f54a9a10ba94",
+          "width": 256,
+          "x": 1120,
+          "y": 384,
+          "zOrder": 102,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TownHouse3",
+          "persistentUuid": "17a04a35-5fb3-471a-a21d-485f0560f4e8",
+          "width": 256,
+          "x": 1344,
+          "y": 384,
+          "zOrder": 106,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FoodStall",
+          "persistentUuid": "d6bed33e-2eeb-4794-829c-363730aafa85",
+          "width": 256,
+          "x": 1728,
+          "y": 384,
+          "zOrder": 107,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FoodStall",
+          "persistentUuid": "1c146d28-2b1e-43a8-a895-f815d6e9a8b1",
+          "width": 256,
+          "x": 1888,
+          "y": 384,
+          "zOrder": 107,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FoodStall",
+          "persistentUuid": "e22bfe51-8e86-4238-aeba-a63583455b98",
+          "width": 256,
+          "x": 2048,
+          "y": 384,
+          "zOrder": 107,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FoodStall",
+          "persistentUuid": "f390f409-da60-4341-a8ca-337f83247135",
+          "width": 256,
+          "x": 2816,
+          "y": 384,
+          "zOrder": 107,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FoodStall",
+          "persistentUuid": "ea1c9518-2857-488a-9808-f0d944c6b7d8",
+          "width": 256,
+          "x": 2976,
+          "y": 384,
+          "zOrder": 107,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FoodStall",
+          "persistentUuid": "5184086c-ef18-41e7-bf7a-2eebe14f4c5f",
+          "width": 256,
+          "x": 3136,
+          "y": 384,
+          "zOrder": 107,
+          "numberProperties": [],
+          "stringProperties": [],
           "initialVariables": []
         }
       ],
@@ -7009,6 +7090,67 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FoodStall",
+          "persistentUuid": "6e48dedd-c7c3-4695-876f-59f4d1382334",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Background/FoodStall.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 6
+                          },
+                          {
+                            "x": 27,
+                            "y": 6
+                          },
+                          {
+                            "x": 27,
+                            "y": 32
+                          },
+                          {
+                            "x": 5,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -7037,6 +7179,9 @@
           },
           {
             "objectName": "TownHouse3"
+          },
+          {
+            "objectName": "FoodStall"
           }
         ]
       },
