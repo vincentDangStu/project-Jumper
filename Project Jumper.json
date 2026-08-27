@@ -1683,7 +1683,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5843784410741306,
+        "zoomFactor": 0.12295621310786232,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -5307,7 +5307,7 @@
       "title": "",
       "v": 144,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -5317,8 +5317,8 @@
         "gridOffsetZ": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.7370816317994029,
+        "snap": true,
+        "zoomFactor": 0.5653158055126309,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -5418,8 +5418,8 @@
           "name": "counter",
           "persistentUuid": "2af5b46f-09c3-4e70-a85e-80957510b514",
           "width": 0,
-          "x": 1238,
-          "y": 647,
+          "x": 1170,
+          "y": 625,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -5565,6 +5565,7 @@
           "bold": false,
           "italic": false,
           "name": "lowMessage",
+          "persistentUuid": "ef811e09-67a7-4d43-877c-d8fe7292ca77",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -5613,6 +5614,18 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "persistentUuid": "eb1c0713-365f-44d1-9f3d-9588d89cbe9e",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": []
         }
       ],
       "objectsFolderStructure": {
@@ -5632,6 +5645,9 @@
           },
           {
             "objectName": "Grapple"
+          },
+          {
+            "objectName": "NewSprite"
           }
         ]
       },
@@ -8228,86 +8244,6 @@
                 "Animation",
                 "=",
                 "\"walk_left_frog\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "Player",
-                "Animation",
-                "=",
-                "\"idle_left_frog\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::CurrentFallSpeed"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject",
-                ">",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Player",
-                "Animation",
-                "=",
-                "\"walk_left_frog\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "Player",
-                "Animation",
-                "=",
-                "\"idle_right_frog\""
-              ]
-            },
-            {
-              "type": {
-                "value": "PlatformBehavior::CurrentFallSpeed"
-              },
-              "parameters": [
-                "Player",
-                "PlatformerObject",
-                ">",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Player",
-                "Animation",
-                "=",
-                "\"walk_right_frog\""
               ]
             }
           ]
