@@ -726,6 +726,14 @@
         "name": "assets/Background/HouseType3.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Balloon.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Balloon",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -783,10 +791,10 @@
       "effects": [],
       "behaviors": [
         {
-          "canBeGrabbed": true,
           "name": "Platform",
-          "platformType": "Jumpthru",
           "type": "PlatformBehavior::PlatformBehavior",
+          "canBeGrabbed": true,
+          "platformType": "Jumpthru",
           "yGrabOffset": 0
         }
       ],
@@ -6223,7 +6231,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.49508400737489106,
+        "zoomFactor": 0.4789341884535273,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6427,7 +6435,7 @@
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "77879da7-741d-4f4e-97a4-2ce99dbbff71",
-          "width": 48,
+          "width": 121,
           "x": 1607,
           "y": -171,
           "zOrder": 14,
@@ -6443,8 +6451,8 @@
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "24618fe5-145f-48a2-a9a1-1b22eb210b00",
-          "width": 48,
-          "x": 1420,
+          "width": 124,
+          "x": 1344,
           "y": -261,
           "zOrder": 15,
           "numberProperties": [],
@@ -6578,9 +6586,9 @@
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "41aaead9-ca72-48a1-bffa-822e7d3a9303",
-          "width": 48,
-          "x": 1266,
-          "y": -655,
+          "width": 110,
+          "x": 1216,
+          "y": -637,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -6594,9 +6602,9 @@
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "7f5ab4c8-1161-4e11-afb9-d7acb52df3dc",
-          "width": 48,
-          "x": 1466,
-          "y": -753,
+          "width": 102,
+          "x": 1440,
+          "y": -733,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -6610,9 +6618,9 @@
           "layer": "",
           "name": "Balloon",
           "persistentUuid": "fb6ec7d8-c115-4d37-abd5-3e79c1cc5e33",
-          "width": 48,
-          "x": 1685,
-          "y": -824,
+          "width": 101,
+          "x": 1659,
+          "y": -797,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -6767,7 +6775,57 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": []
+          "animations": [
+            {
+              "name": "Balloon",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Balloon",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 10,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 5
+                          },
+                          {
+                            "x": 23,
+                            "y": 25
+                          },
+                          {
+                            "x": 10,
+                            "y": 25
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "adaptCollisionMaskAutomatically": true,
