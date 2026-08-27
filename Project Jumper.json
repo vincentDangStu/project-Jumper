@@ -8233,6 +8233,86 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"idle_left_frog\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::CurrentFallSpeed"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"walk_left_frog\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"idle_right_frog\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlatformBehavior::CurrentFallSpeed"
+              },
+              "parameters": [
+                "Player",
+                "PlatformerObject",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Player",
+                "Animation",
+                "=",
+                "\"walk_right_frog\""
+              ]
+            }
+          ]
+        },
+        {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
             "b": 109,
