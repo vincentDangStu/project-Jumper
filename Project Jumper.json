@@ -950,6 +950,14 @@
         "name": "left_bowtie4",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Sprites/Cheese.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/Sprites/Cheese.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -2881,7 +2889,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2467258695740787,
+        "zoomFactor": 0.1830573495556122,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -7522,7 +7530,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4057518905943884,
+        "zoomFactor": 0.448197804541042,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -7808,8 +7816,8 @@
           "name": "Player",
           "persistentUuid": "8876915f-6152-4b1b-a778-d6dbd9e47a30",
           "width": 128,
-          "x": 96,
-          "y": 480,
+          "x": 256,
+          "y": 512,
           "zOrder": 108,
           "numberProperties": [],
           "stringProperties": [],
@@ -8307,10 +8315,10 @@
           "effects": [],
           "behaviors": [
             {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
               "canBeGrabbed": true,
+              "name": "Platform",
               "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
               "yGrabOffset": 0
             }
           ],
@@ -8376,10 +8384,10 @@
           "effects": [],
           "behaviors": [
             {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
               "canBeGrabbed": true,
+              "name": "Platform",
               "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
               "yGrabOffset": 0
             }
           ],
@@ -8445,10 +8453,10 @@
           "effects": [],
           "behaviors": [
             {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
               "canBeGrabbed": true,
+              "name": "Platform",
               "platformType": "Jumpthru",
+              "type": "PlatformBehavior::PlatformBehavior",
               "yGrabOffset": 0
             }
           ],
@@ -8625,6 +8633,67 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "The_Cheese",
+          "persistentUuid": "2285aae5-d438-4e89-af09-f54f92c3fe19",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Sprites/Cheese.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 9
+                          },
+                          {
+                            "x": 27,
+                            "y": 9
+                          },
+                          {
+                            "x": 27,
+                            "y": 31
+                          },
+                          {
+                            "x": 6,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -8659,6 +8728,9 @@
           },
           {
             "objectName": "Fountain"
+          },
+          {
+            "objectName": "The_Cheese"
           }
         ]
       },
@@ -8748,17 +8820,6 @@
                 "Balloon",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "PickNearest"
-              },
-              "parameters": [
-                "Balloon",
-                "Player.CenterX()",
-                "Player.CenterY()",
-                ""
-              ]
             }
           ],
           "actions": [
@@ -8770,7 +8831,7 @@
                 "Balloon",
                 "LinearMovement",
                 "=",
-                "50",
+                "10",
                 ""
               ]
             }
@@ -8779,17 +8840,6 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "PickNearest"
-              },
-              "parameters": [
-                "Balloon",
-                "Player.CenterX()",
-                "Player.CenterY()",
-                ""
-              ]
-            },
             {
               "type": {
                 "inverted": true,
@@ -8814,7 +8864,7 @@
                   },
                   "parameters": [
                     "Balloon",
-                    "!=",
+                    "=",
                     "Balloon.originY"
                   ]
                 }
