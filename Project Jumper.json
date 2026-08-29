@@ -3613,7 +3613,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.0269425874981808,
+        "zoomFactor": 0.8141881203710502,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -3698,8 +3698,8 @@
           "name": "MoveTut",
           "persistentUuid": "7c1016e3-2a44-482a-9318-8c7acb256c4c",
           "width": 0,
-          "x": 191,
-          "y": 357,
+          "x": 544,
+          "y": 320,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -5003,6 +5003,38 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ShopTut",
+          "persistentUuid": "757ba43d-1c14-4f1f-af92-753e01be70af",
+          "width": 0,
+          "x": 2496,
+          "y": 224,
+          "zOrder": 124,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "SignTut",
+          "persistentUuid": "817759ed-28c1-454d-8496-0cd59401d6c3",
+          "width": 0,
+          "x": 6104,
+          "y": 261,
+          "zOrder": 125,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -5949,6 +5981,94 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ShopTut",
+          "persistentUuid": "bdca240d-7e77-4157-9ba9-df2d235f2320",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Press E to Access Shop",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "126;211;33",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Press E to Access Shop",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "SignTut",
+          "persistentUuid": "de86b0b3-0031-4005-bd56-1e416319ad89",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Press E to Enter Town",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "126;211;33",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Press E to Enter Town",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -5968,6 +6088,9 @@
               },
               {
                 "objectName": "MoveTut"
+              },
+              {
+                "objectName": "ShopTut"
               },
               {
                 "objectName": "JumpTut"
@@ -6008,6 +6131,9 @@
           },
           {
             "objectName": "Speech_Bubble"
+          },
+          {
+            "objectName": "SignTut"
           }
         ]
       },
