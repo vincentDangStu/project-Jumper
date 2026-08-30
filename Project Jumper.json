@@ -3613,7 +3613,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8141881203710502,
+        "zoomFactor": 0.7130377630690914,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -7458,15 +7458,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
           "keepRatio": true,
           "layer": "",
           "name": "lowMessage",
           "persistentUuid": "a14f5548-d8ab-415b-9284-cf5831c5e079",
-          "width": 0,
-          "x": 389,
-          "y": 650,
+          "width": 749,
+          "x": 275,
+          "y": 288,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -7648,7 +7649,7 @@
           ],
           "string": "You can't afford this item",
           "font": "Kenney Mini Square.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 40,
           "color": {
             "b": 0,
@@ -7671,7 +7672,7 @@
             "underlined": false,
             "text": "You can't afford this item",
             "font": "Kenney Mini Square.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
             "lineHeight": 0,
@@ -8014,6 +8015,17 @@
           "actions": [
             {
               "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"You can't afford this item\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Show"
               },
               "parameters": [
@@ -8050,6 +8062,17 @@
           "actions": [
             {
               "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"You can't afford this item\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Show"
               },
               "parameters": [
@@ -8084,6 +8107,17 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"You can't afford this item\""
+              ]
+            },
             {
               "type": {
                 "value": "Show"
@@ -8136,6 +8170,147 @@
               },
               "parameters": [
                 "lowMessage"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "Triple",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScoreCounter::ScoreCounter::Score"
+              },
+              "parameters": [
+                "counter",
+                ">=",
+                "15",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "lowMessage",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"The bowtie bestows strength in your hops.\nYou gain an extra jump.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "Gravity",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScoreCounter::ScoreCounter::Score"
+              },
+              "parameters": [
+                "counter",
+                ">=",
+                "20",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "lowMessage",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"The hat makes you feel lighter.\nGravity has a weaker effect on you.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "Grapple",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScoreCounter::ScoreCounter::Score"
+              },
+              "parameters": [
+                "counter",
+                ">=",
+                "25",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "lowMessage",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"The monocle helps you spot flies.\nPress W near a highlighted fly to grapple to it.\""
               ]
             }
           ]
