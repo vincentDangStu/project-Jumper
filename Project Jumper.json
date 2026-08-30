@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 280,
+    "build": 281,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -3613,7 +3613,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.8141881203710502,
+        "zoomFactor": 0.5290357402157223,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4947,7 +4947,7 @@
           "persistentUuid": "cbb767fa-16dc-41b6-b9c6-41b00582e43f",
           "width": 128,
           "x": 384,
-          "y": -160,
+          "y": -96,
           "zOrder": 121,
           "numberProperties": [],
           "stringProperties": [],
@@ -8339,7 +8339,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2912258866911213,
+        "zoomFactor": 0.230891833852257,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -8359,7 +8359,7 @@
           "width": 128,
           "x": 128,
           "y": 512,
-          "zOrder": 118,
+          "zOrder": 127,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8675,7 +8675,7 @@
           "width": 3456,
           "x": 640,
           "y": -1216,
-          "zOrder": 109,
+          "zOrder": -8,
           "numberProperties": [],
           "stringProperties": [
             {
@@ -8832,7 +8832,7 @@
           "persistentUuid": "e9c4d074-b316-4f79-96b0-2dcf127b3c6b",
           "width": 192,
           "x": 928,
-          "y": 416,
+          "y": 405,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -10673,6 +10673,57 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TopHat",
+          "persistentUuid": "8e20475c-1a9d-44fd-a46c-a569abb4bef3",
+          "width": 128,
+          "x": -512,
+          "y": -64,
+          "zOrder": 129,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 4,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Monocle",
+          "persistentUuid": "cd2e5bc2-70ed-4047-b0e1-edf0c2a1e8a1",
+          "width": 128,
+          "x": -512,
+          "y": -64,
+          "zOrder": 129,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 4,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Bowtie",
+          "persistentUuid": "072dc66a-20dd-4250-bea0-2cd92ee6a34a",
+          "width": 128,
+          "x": -512,
+          "y": -64,
+          "zOrder": 128,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -10866,15 +10917,7 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
               "name": "",
@@ -10935,15 +10978,7 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
               "name": "",
@@ -11004,15 +11039,7 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
               "name": "",
@@ -12582,7 +12609,7 @@
                 "=",
                 "Player.PointX(\"Origin\")",
                 "=",
-                "Player.PointY(\"Origin\") + 4"
+                "Player.PointY(\"Origin\")"
               ]
             }
           ]
@@ -12943,7 +12970,7 @@
                 "=",
                 "Player.PointX(\"Origin\")",
                 "=",
-                "Player.PointY(\"Origin\") + 4"
+                "Player.PointY(\"Origin\")"
               ]
             }
           ]
@@ -13024,7 +13051,7 @@
                 "=",
                 "Player.PointX(\"Origin\")",
                 "=",
-                "Player.PointY(\"Origin\") - 4"
+                "Player.PointY(\"Origin\")"
               ]
             }
           ]
