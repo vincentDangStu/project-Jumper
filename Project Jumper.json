@@ -7087,6 +7087,16 @@
             },
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "count",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "Scene"
               },
               "parameters": [
@@ -7136,6 +7146,27 @@
                     "\"Game Scene\"",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "ScoreCounter::ScoreCounter::SetScore"
+                  },
+                  "parameters": [
+                    "counter",
+                    "=",
+                    "0",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "count",
+                    "=",
+                    "0"
+                  ]
                 }
               ]
             },
@@ -7154,6 +7185,27 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "ScoreCounter::ScoreCounter::SetScore"
+                  },
+                  "parameters": [
+                    "counter",
+                    "=",
+                    "30",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "count",
+                    "=",
+                    "30"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene"
@@ -11388,7 +11440,8 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Balloon",
           "conditions": [
             {
               "type": {
@@ -11411,14 +11464,15 @@
                 "Balloon",
                 "LinearMovement",
                 "=",
-                "10",
+                "50",
                 ""
               ]
             }
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Balloon",
           "conditions": [
             {
               "type": {
@@ -11444,7 +11498,7 @@
                   },
                   "parameters": [
                     "Balloon",
-                    "=",
+                    "!=",
                     "Balloon.originY"
                   ]
                 }
@@ -11457,8 +11511,8 @@
                   "parameters": [
                     "Balloon",
                     "LinearMovement",
-                    "*",
-                    "-1",
+                    "=",
+                    "-50",
                     ""
                   ]
                 }
@@ -11473,7 +11527,7 @@
                   },
                   "parameters": [
                     "Balloon",
-                    "=",
+                    "<",
                     "Balloon.originY"
                   ]
                 }
