@@ -3613,7 +3613,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7130377630690914,
+        "zoomFactor": 0.5290357402157223,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4947,7 +4947,7 @@
           "persistentUuid": "cbb767fa-16dc-41b6-b9c6-41b00582e43f",
           "width": 128,
           "x": 384,
-          "y": -160,
+          "y": -96,
           "zOrder": 121,
           "numberProperties": [],
           "stringProperties": [],
@@ -7458,16 +7458,15 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 40,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "",
           "name": "lowMessage",
           "persistentUuid": "a14f5548-d8ab-415b-9284-cf5831c5e079",
-          "width": 749,
-          "x": 275,
-          "y": 288,
+          "width": 0,
+          "x": 389,
+          "y": 650,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -7649,7 +7648,7 @@
           ],
           "string": "You can't afford this item",
           "font": "Kenney Mini Square.ttf",
-          "textAlignment": "center",
+          "textAlignment": "left",
           "characterSize": 40,
           "color": {
             "b": 0,
@@ -7672,7 +7671,7 @@
             "underlined": false,
             "text": "You can't afford this item",
             "font": "Kenney Mini Square.ttf",
-            "textAlignment": "center",
+            "textAlignment": "left",
             "verticalTextAlignment": "top",
             "characterSize": 40,
             "lineHeight": 0,
@@ -8015,17 +8014,6 @@
           "actions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "lowMessage",
-                "Text",
-                "=",
-                "\"You can't afford this item\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Show"
               },
               "parameters": [
@@ -8062,17 +8050,6 @@
           "actions": [
             {
               "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "lowMessage",
-                "Text",
-                "=",
-                "\"You can't afford this item\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Show"
               },
               "parameters": [
@@ -8107,17 +8084,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "lowMessage",
-                "Text",
-                "=",
-                "\"You can't afford this item\""
-              ]
-            },
             {
               "type": {
                 "value": "Show"
@@ -8170,147 +8136,6 @@
               },
               "parameters": [
                 "lowMessage"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
-              },
-              "parameters": [
-                "Triple",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScoreCounter::ScoreCounter::Score"
-              },
-              "parameters": [
-                "counter",
-                ">=",
-                "15",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "lowMessage",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "lowMessage",
-                "Text",
-                "=",
-                "\"The bowtie bestows strength in your hops.\nYou gain an extra jump.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
-              },
-              "parameters": [
-                "Gravity",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScoreCounter::ScoreCounter::Score"
-              },
-              "parameters": [
-                "counter",
-                ">=",
-                "20",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "lowMessage",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "lowMessage",
-                "Text",
-                "=",
-                "\"The hat makes you feel lighter.\nGravity has a weaker effect on you.\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
-              },
-              "parameters": [
-                "Grapple",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ScoreCounter::ScoreCounter::Score"
-              },
-              "parameters": [
-                "counter",
-                ">=",
-                "25",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "lowMessage",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-              },
-              "parameters": [
-                "lowMessage",
-                "Text",
-                "=",
-                "\"The monocle helps you spot flies.\nPress W near a highlighted fly to grapple to it.\""
               ]
             }
           ]
@@ -8566,7 +8391,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2912258866911213,
+        "zoomFactor": 0.230891833852257,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -8586,7 +8411,7 @@
           "width": 128,
           "x": 128,
           "y": 512,
-          "zOrder": 118,
+          "zOrder": 127,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8902,7 +8727,7 @@
           "width": 3456,
           "x": 640,
           "y": -1216,
-          "zOrder": 109,
+          "zOrder": -8,
           "numberProperties": [],
           "stringProperties": [
             {
@@ -9059,7 +8884,7 @@
           "persistentUuid": "e9c4d074-b316-4f79-96b0-2dcf127b3c6b",
           "width": 192,
           "x": 928,
-          "y": 416,
+          "y": 405,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -10900,6 +10725,57 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TopHat",
+          "persistentUuid": "8e20475c-1a9d-44fd-a46c-a569abb4bef3",
+          "width": 128,
+          "x": -512,
+          "y": -64,
+          "zOrder": 129,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 4,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Monocle",
+          "persistentUuid": "cd2e5bc2-70ed-4047-b0e1-edf0c2a1e8a1",
+          "width": 128,
+          "x": -512,
+          "y": -64,
+          "zOrder": 129,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 4,
+          "height": 128,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Bowtie",
+          "persistentUuid": "072dc66a-20dd-4250-bea0-2cd92ee6a34a",
+          "width": 128,
+          "x": -512,
+          "y": -64,
+          "zOrder": 128,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -11093,15 +10969,7 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
               "name": "",
@@ -11162,15 +11030,7 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
               "name": "",
@@ -11231,15 +11091,7 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "Jumpthru",
-              "yGrabOffset": 0
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
               "name": "",
@@ -12811,7 +12663,7 @@
                 "=",
                 "Player.PointX(\"Origin\")",
                 "=",
-                "Player.PointY(\"Origin\") + 4"
+                "Player.PointY(\"Origin\")"
               ]
             }
           ]
@@ -13172,7 +13024,7 @@
                 "=",
                 "Player.PointX(\"Origin\")",
                 "=",
-                "Player.PointY(\"Origin\") + 4"
+                "Player.PointY(\"Origin\")"
               ]
             }
           ]
@@ -13253,7 +13105,7 @@
                 "=",
                 "Player.PointX(\"Origin\")",
                 "=",
-                "Player.PointY(\"Origin\") - 4"
+                "Player.PointY(\"Origin\")"
               ]
             }
           ]
