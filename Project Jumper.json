@@ -3613,7 +3613,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5290357402157223,
+        "zoomFactor": 0.667277399833046,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6094,6 +6094,9 @@
               },
               {
                 "objectName": "JumpTut"
+              },
+              {
+                "objectName": "SignTut"
               }
             ]
           },
@@ -6131,9 +6134,6 @@
           },
           {
             "objectName": "Speech_Bubble"
-          },
-          {
-            "objectName": "SignTut"
           }
         ]
       },
@@ -7458,15 +7458,16 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
           "keepRatio": true,
           "layer": "",
           "name": "lowMessage",
           "persistentUuid": "a14f5548-d8ab-415b-9284-cf5831c5e079",
-          "width": 0,
-          "x": 389,
-          "y": 650,
+          "width": 621,
+          "x": 371,
+          "y": 256,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -7648,7 +7649,7 @@
           ],
           "string": "You can't afford this item",
           "font": "Kenney Mini Square.ttf",
-          "textAlignment": "left",
+          "textAlignment": "center",
           "characterSize": 40,
           "color": {
             "b": 0,
@@ -7671,7 +7672,7 @@
             "underlined": false,
             "text": "You can't afford this item",
             "font": "Kenney Mini Square.ttf",
-            "textAlignment": "left",
+            "textAlignment": "center",
             "verticalTextAlignment": "top",
             "characterSize": 40,
             "lineHeight": 0,
@@ -8020,6 +8021,17 @@
                 "lowMessage",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"You can't afford this item\""
+              ]
             }
           ]
         },
@@ -8136,6 +8148,147 @@
               },
               "parameters": [
                 "lowMessage"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ScoreCounter::ScoreCounter::Score"
+              },
+              "parameters": [
+                "counter",
+                ">=",
+                "15",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "Triple",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "lowMessage",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"The bowtie strengthens your hops.\nYou gain an additional jump.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ScoreCounter::ScoreCounter::Score"
+              },
+              "parameters": [
+                "counter",
+                ">=",
+                "20",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "Gravity",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "lowMessage",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"The hat makes you feel lighter.\nGravity is weakened on you.\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ScoreCounter::ScoreCounter::Score"
+              },
+              "parameters": [
+                "counter",
+                ">=",
+                "25",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::IsHovered"
+              },
+              "parameters": [
+                "Grapple",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "lowMessage",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "lowMessage",
+                "Text",
+                "=",
+                "\"The monocle helps you see the flies.\nPress W near a highlighted fly to grapple to it.\""
               ]
             }
           ]
@@ -8391,7 +8544,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.230891833852257,
+        "zoomFactor": 0.7370816317994298,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -10776,6 +10929,23 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "User Interface",
+          "name": "counter",
+          "persistentUuid": "fefc7b0d-3ca6-49b4-8470-b354051a397d",
+          "width": 64,
+          "x": 97,
+          "y": 38,
+          "zOrder": 130,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -11669,6 +11839,24 @@
               }
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "User Interface",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
