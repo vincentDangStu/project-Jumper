@@ -7219,6 +7219,31 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "numScene",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "Continue"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -8544,7 +8569,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.7370816317994298,
+        "zoomFactor": 0.14513286445533652,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -8572,14 +8597,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 448,
           "keepRatio": true,
           "layer": "",
           "name": "TownTileset",
           "persistentUuid": "441d594f-9be3-47f0-a032-668cc7f6047c",
-          "width": 5184,
-          "x": 0,
+          "width": 5280,
+          "x": -64,
           "y": 640,
           "zOrder": 24,
           "numberProperties": [],
@@ -10719,7 +10744,7 @@
           "name": "End",
           "persistentUuid": "e85d6b84-3e4b-4bd1-a160-1ad00ff4f987",
           "width": 64,
-          "x": -64,
+          "x": -96,
           "y": -1696,
           "zOrder": 123,
           "numberProperties": [],
@@ -13096,6 +13121,17 @@
           "conditions": [
             {
               "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "End",
+                "Player.CenterX()",
+                "Player.CenterY()",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "IsOnScreen::InOnScreen::IsOnScreen"
               },
               "parameters": [
@@ -13107,13 +13143,12 @@
             },
             {
               "type": {
-                "value": "Distance"
+                "value": "BuiltinCommonInstructions::CompareNumbers"
               },
               "parameters": [
-                "Player",
-                "End",
-                "600",
-                ""
+                "abs(Player.CenterX() - End.X())",
+                "<",
+                "600"
               ]
             }
           ],
