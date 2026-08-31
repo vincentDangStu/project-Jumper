@@ -1030,6 +1030,20 @@
         "name": "assets/Sprites/BowtieShop.png",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/1up 5.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "1ad4cbaab9c5cde9bdad5eefb1740bbb9ecf325e194199d8ad67af8f5889cde1_1up 5.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/1up/1ad4cbaab9c5cde9bdad5eefb1740bbb9ecf325e194199d8ad67af8f5889cde1_1up 5.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },
@@ -12783,6 +12797,18 @@
               },
               "parameters": [
                 "cheeseIcon",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "1ad4cbaab9c5cde9bdad5eefb1740bbb9ecf325e194199d8ad67af8f5889cde1_1up 5.aac",
+                "",
+                "10",
                 ""
               ]
             }
