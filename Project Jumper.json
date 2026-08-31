@@ -3942,7 +3942,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3925161175488509,
+        "zoomFactor": 0.6040838749989322,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -4201,7 +4201,7 @@
           "width": 6464,
           "x": -128,
           "y": -128,
-          "zOrder": -3,
+          "zOrder": -8,
           "numberProperties": [],
           "stringProperties": [
             {
@@ -5192,7 +5192,7 @@
           "width": 160,
           "x": 6144,
           "y": 224,
-          "zOrder": 59,
+          "zOrder": -7,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5360,7 +5360,7 @@
           "width": 0,
           "x": 6104,
           "y": 261,
-          "zOrder": 125,
+          "zOrder": -6,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6005,6 +6005,7 @@
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Town_Sign",
+          "persistentUuid": "bbcd9db2-f577-4e70-9a0b-261807a61d31",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -8935,7 +8936,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6672773998330255,
+        "zoomFactor": 0.8141881203710261,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
