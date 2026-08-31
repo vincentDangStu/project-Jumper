@@ -13259,6 +13259,16 @@
               "parameters": [
                 "2"
               ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Finish Scene\"",
+                ""
+              ]
             }
           ]
         },
