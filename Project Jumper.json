@@ -8569,7 +8569,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.3841198046307386,
+        "zoomFactor": 0.6040838749989109,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -10914,8 +10914,8 @@
           "name": "counter",
           "persistentUuid": "fefc7b0d-3ca6-49b4-8470-b354051a397d",
           "width": 64,
-          "x": 97,
-          "y": 38,
+          "x": 51,
+          "y": 17,
           "zOrder": 130,
           "numberProperties": [],
           "stringProperties": [],
@@ -11070,6 +11070,23 @@
           "x": 1536,
           "y": 480,
           "zOrder": 138,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "keepRatio": true,
+          "layer": "User Interface",
+          "name": "cheeseIcon",
+          "persistentUuid": "05b72458-748f-4532-8318-1878240485dc",
+          "width": 64,
+          "x": 0,
+          "y": 64,
+          "zOrder": 139,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12001,6 +12018,66 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "cheeseIcon",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Sprites/Cheese.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 9
+                          },
+                          {
+                            "x": 27,
+                            "y": 9
+                          },
+                          {
+                            "x": 27,
+                            "y": 31
+                          },
+                          {
+                            "x": 6,
+                            "y": 31
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -12059,6 +12136,9 @@
           },
           {
             "objectName": "Dialogue7"
+          },
+          {
+            "objectName": "cheeseIcon"
           }
         ]
       },
@@ -12274,6 +12354,29 @@
           "conditions": [
             {
               "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "cheeseIcon"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CollisionNP"
               },
               "parameters": [
@@ -12288,25 +12391,20 @@
           "actions": [
             {
               "type": {
-                "value": "Sticker::Sticker::Stick"
+                "value": "Delete"
               },
               "parameters": [
                 "The_Cheese",
-                "Sticker",
-                "Player",
                 ""
               ]
             },
             {
               "type": {
-                "value": "SetXY"
+                "value": "Show"
               },
               "parameters": [
-                "The_Cheese",
-                "=",
-                "Player.CenterX()",
-                "=",
-                "Player.CenterY() - 10"
+                "cheeseIcon",
+                ""
               ]
             }
           ]
@@ -12314,18 +12412,6 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
-            {
-              "type": {
-                "value": "Sticker::IsStuck"
-              },
-              "parameters": [
-                "",
-                "The_Cheese",
-                "Sticker",
-                "Player",
-                ""
-              ]
-            },
             {
               "type": {
                 "value": "CollisionNP"
@@ -12336,6 +12422,14 @@
                 "",
                 "",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "cheeseIcon"
               ]
             }
           ],
