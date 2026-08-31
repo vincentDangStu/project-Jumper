@@ -1044,6 +1044,34 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/1up/1ad4cbaab9c5cde9bdad5eefb1740bbb9ecf325e194199d8ad67af8f5889cde1_1up 5.aac",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "file": "assets/Hopeful.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "9fe230e44f1da3d62eefe7efd9d7b1b9deb847c89d21a4905ba0a50faa7af459_Hopeful.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/Comedy/9fe230e44f1da3d62eefe7efd9d7b1b9deb847c89d21a4905ba0a50faa7af459_Hopeful.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Connecting Rainbows.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "375855f01cc2addd94c0eab7ef7699bc5ccda3d03f14f0f9d7c1157885273041_Connecting Rainbows.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Music/World/375855f01cc2addd94c0eab7ef7699bc5ccda3d03f14f0f9d7c1157885273041_Connecting Rainbows.aac",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },
@@ -6190,6 +6218,33 @@
             "includeConfig": 0
           },
           "target": "Player"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "375855f01cc2addd94c0eab7ef7699bc5ccda3d03f14f0f9d7c1157885273041_Connecting Rainbows.aac",
+                "yes",
+                "8",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -12542,6 +12597,33 @@
             "includeConfig": 0
           },
           "target": "Player"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "9fe230e44f1da3d62eefe7efd9d7b1b9deb847c89d21a4905ba0a50faa7af459_Hopeful.aac",
+                "yes",
+                "8",
+                ""
+              ]
+            }
+          ]
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
